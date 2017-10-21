@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07B5E24F254AA28FF2335971 /* Pods_openLibreReaderWidget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CB164684B04AF4757626EC4 /* Pods_openLibreReaderWidget.framework */; };
+		1CE49751753053630FACE449 /* Pods_openLibreReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C7EE85A1F9B708F00D4A288 /* Pods_openLibreReader.framework */; };
 		5CC91AA9BCBF6B83F9EA9733 /* Pods_openLibreReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69010E584FBC43C6715AC1E5 /* Pods_openLibreReader.framework */; };
 		6C0D172A1F7196E500050A73 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6C0D172C1F7196E500050A73 /* Localizable.strings */; };
 		6C56D4F41F969F43000BC92A /* NSUploadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C56D4F31F969F43000BC92A /* NSUploadViewController.m */; };
@@ -49,6 +51,13 @@
 		6C6CABCF1F12B0B200810568 /* batteryValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C6CABCE1F12B0B200810568 /* batteryValue.m */; };
 		6C7EE8301F97E17200D4A288 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C7EE82E1F97E17100D4A288 /* AboutViewController.m */; };
 		6C7EE8331F97E4FE00D4A288 /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = 6C7EE8351F97E4FE00D4A288 /* about.html */; };
+		6C7EE8491F9B704800D4A288 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C7EE8481F9B704800D4A288 /* TodayViewController.m */; };
+		6C7EE84C1F9B704800D4A288 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C7EE84A1F9B704800D4A288 /* MainInterface.storyboard */; };
+		6C7EE8501F9B704800D4A288 /* openLibreReaderWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6C7EE8431F9B704700D4A288 /* openLibreReaderWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6C7EE8561F9B706200D4A288 /* MMWormhole.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C7EE8571F9B706200D4A288 /* MMWormhole.framework */; };
+		6C7EE8581F9B706200D4A288 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CF394C51F794F06006EFECA /* Charts.framework */; };
+		6C7EE8601F9B926300D4A288 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C7EE8441F9B704800D4A288 /* NotificationCenter.framework */; };
+		6C7EE8621F9BB21E00D4A288 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C7EE8611F9BB21E00D4A288 /* Media.xcassets */; };
 		6CAEE6811F617AD1001EBDEF /* BluetoothStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CAEE6801F617AD1001EBDEF /* BluetoothStatus.m */; };
 		6CC754A91F5DAD48008194E1 /* ConfigurationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CC754A81F5DAD48008194E1 /* ConfigurationViewController.m */; };
 		6CC754AC1F5DB9D5008194E1 /* ConfigurationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CC754AB1F5DB9D5008194E1 /* ConfigurationTableViewCell.m */; };
@@ -60,6 +69,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		6C7EE84E1F9B704800D4A288 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C6CAB721F0FB6F000810568 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C7EE8421F9B704700D4A288;
+			remoteInfo = openLibreReaderWidget;
+		};
 		6CF394C41F794F06006EFECA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6CF394BF1F794F05006EFECA /* Charts.xcodeproj */;
@@ -95,10 +111,23 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6C7EE8551F9B704800D4A288 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6C7EE8501F9B704800D4A288 /* openLibreReaderWidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		28FD1ABECB81DF9FF6A393D5 /* Pods-openLibreReaderWidget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-openLibreReaderWidget.release.xcconfig"; path = "Pods/Target Support Files/Pods-openLibreReaderWidget/Pods-openLibreReaderWidget.release.xcconfig"; sourceTree = "<group>"; };
 		46557CDE10947FE710BCEEB5 /* Pods-openLibreReader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-openLibreReader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-openLibreReader/Pods-openLibreReader.debug.xcconfig"; sourceTree = "<group>"; };
+		4A6B634884485047D4A30DA0 /* Pods-openLibreReaderWidget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-openLibreReaderWidget.debug.xcconfig"; path = "Pods/Target Support Files/Pods-openLibreReaderWidget/Pods-openLibreReaderWidget.debug.xcconfig"; sourceTree = "<group>"; };
 		5014BCFD480F87CE7EB4C497 /* Pods-openLibreReader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-openLibreReader.release.xcconfig"; path = "Pods/Target Support Files/Pods-openLibreReader/Pods-openLibreReader.release.xcconfig"; sourceTree = "<group>"; };
 		69010E584FBC43C6715AC1E5 /* Pods_openLibreReader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_openLibreReader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C0D172B1F7196E500050A73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -175,8 +204,20 @@
 		6C7EE8361F97E50E00D4A288 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = de; path = de.lproj/about.html; sourceTree = "<group>"; };
 		6C7EE83A1F9810C200D4A288 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6C7EE83C1F9B5F4D00D4A288 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		6C7EE8431F9B704700D4A288 /* openLibreReaderWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = openLibreReaderWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C7EE8441F9B704800D4A288 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		6C7EE8471F9B704800D4A288 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		6C7EE8481F9B704800D4A288 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		6C7EE84B1F9B704800D4A288 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		6C7EE84D1F9B704800D4A288 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C7EE8571F9B706200D4A288 /* MMWormhole.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MMWormhole.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C7EE85A1F9B708F00D4A288 /* Pods_openLibreReader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_openLibreReader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C7EE85E1F9B751C00D4A288 /* openLibreReaderWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = openLibreReaderWidget.entitlements; sourceTree = "<group>"; };
+		6C7EE85F1F9B753300D4A288 /* openLibreReader.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = openLibreReader.entitlements; sourceTree = "<group>"; };
+		6C7EE8611F9BB21E00D4A288 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		6CAEE67F1F617AD1001EBDEF /* BluetoothStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BluetoothStatus.h; sourceTree = "<group>"; };
 		6CAEE6801F617AD1001EBDEF /* BluetoothStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BluetoothStatus.m; sourceTree = "<group>"; };
+		6CB164684B04AF4757626EC4 /* Pods_openLibreReaderWidget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_openLibreReaderWidget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CB547F61F71ACD100F085BC /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
 		6CB547F81F71ACDE00F085BC /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		6CC754A71F5DAD48008194E1 /* ConfigurationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigurationViewController.h; sourceTree = "<group>"; };
@@ -203,6 +244,18 @@
 				6CF394C91F795070006EFECA /* Charts.framework in Frameworks */,
 				6C6CABB31F0FDCE400810568 /* CoreBluetooth.framework in Frameworks */,
 				5CC91AA9BCBF6B83F9EA9733 /* Pods_openLibreReader.framework in Frameworks */,
+				1CE49751753053630FACE449 /* Pods_openLibreReader.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C7EE8401F9B704700D4A288 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C7EE8601F9B926300D4A288 /* NotificationCenter.framework in Frameworks */,
+				6C7EE8581F9B706200D4A288 /* Charts.framework in Frameworks */,
+				6C7EE8561F9B706200D4A288 /* MMWormhole.framework in Frameworks */,
+				07B5E24F254AA28FF2335971 /* Pods_openLibreReaderWidget.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +267,8 @@
 			children = (
 				46557CDE10947FE710BCEEB5 /* Pods-openLibreReader.debug.xcconfig */,
 				5014BCFD480F87CE7EB4C497 /* Pods-openLibreReader.release.xcconfig */,
+				4A6B634884485047D4A30DA0 /* Pods-openLibreReaderWidget.debug.xcconfig */,
+				28FD1ABECB81DF9FF6A393D5 /* Pods-openLibreReaderWidget.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -294,6 +349,7 @@
 			children = (
 				6C7EE83C1F9B5F4D00D4A288 /* README.md */,
 				6C6CAB7C1F0FB6F000810568 /* openLibreReader */,
+				6C7EE8461F9B704800D4A288 /* openLibreReaderWidget */,
 				6C6CAB7B1F0FB6F000810568 /* Products */,
 				6C6CABB11F0FDCE400810568 /* Frameworks */,
 				1FBCC21430C4C4C4462669D3 /* Pods */,
@@ -304,6 +360,7 @@
 			isa = PBXGroup;
 			children = (
 				6C6CAB7A1F0FB6F000810568 /* openLibreReader.app */,
+				6C7EE8431F9B704700D4A288 /* openLibreReaderWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -311,6 +368,7 @@
 		6C6CAB7C1F0FB6F000810568 /* openLibreReader */ = {
 			isa = PBXGroup;
 			children = (
+				6C7EE85F1F9B753300D4A288 /* openLibreReader.entitlements */,
 				6C6C80F01F826E8300DE3B8C /* Alarms */,
 				6CAEE67F1F617AD1001EBDEF /* BluetoothStatus.h */,
 				6CAEE6801F617AD1001EBDEF /* BluetoothStatus.m */,
@@ -349,6 +407,8 @@
 		6C6CABB11F0FDCE400810568 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6C7EE85A1F9B708F00D4A288 /* Pods_openLibreReader.framework */,
+				6C7EE8571F9B706200D4A288 /* MMWormhole.framework */,
 				6C6C810C1F939B2500DE3B8C /* AVFoundation.framework */,
 				6C6C810A1F939B0A00DE3B8C /* AVKit.framework */,
 				6C6C81001F8BE5D000DE3B8C /* UserNotifications.framework */,
@@ -357,8 +417,23 @@
 				6C6CABBA1F11A6BF00810568 /* libsqlite3.tbd */,
 				6C6CABB21F0FDCE400810568 /* CoreBluetooth.framework */,
 				69010E584FBC43C6715AC1E5 /* Pods_openLibreReader.framework */,
+				6C7EE8441F9B704800D4A288 /* NotificationCenter.framework */,
+				6CB164684B04AF4757626EC4 /* Pods_openLibreReaderWidget.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6C7EE8461F9B704800D4A288 /* openLibreReaderWidget */ = {
+			isa = PBXGroup;
+			children = (
+				6C7EE85E1F9B751C00D4A288 /* openLibreReaderWidget.entitlements */,
+				6C7EE8471F9B704800D4A288 /* TodayViewController.h */,
+				6C7EE8481F9B704800D4A288 /* TodayViewController.m */,
+				6C7EE84A1F9B704800D4A288 /* MainInterface.storyboard */,
+				6C7EE84D1F9B704800D4A288 /* Info.plist */,
+				6C7EE8611F9BB21E00D4A288 /* Media.xcassets */,
+			);
+			path = openLibreReaderWidget;
 			sourceTree = "<group>";
 		};
 		6CC754A51F5DAD1A008194E1 /* Configuration */ = {
@@ -413,16 +488,37 @@
 				D1C5DDEF095EDA2FE1FE1E0F /* [CP] Embed Pods Frameworks */,
 				75D3D3621FBA879E7ECD65AE /* [CP] Copy Pods Resources */,
 				6C6C81031F91162400DE3B8C /* Run Script */,
+				6C7EE8551F9B704800D4A288 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				6CF394CC1F795070006EFECA /* PBXTargetDependency */,
+				6C7EE84F1F9B704800D4A288 /* PBXTargetDependency */,
 			);
 			name = openLibreReader;
 			productName = openLibreReader;
 			productReference = 6C6CAB7A1F0FB6F000810568 /* openLibreReader.app */;
 			productType = "com.apple.product-type.application";
+		};
+		6C7EE8421F9B704700D4A288 /* openLibreReaderWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C7EE8541F9B704800D4A288 /* Build configuration list for PBXNativeTarget "openLibreReaderWidget" */;
+			buildPhases = (
+				31A8BAF03DC5F6D28BF67420 /* [CP] Check Pods Manifest.lock */,
+				6C7EE83F1F9B704700D4A288 /* Sources */,
+				6C7EE8401F9B704700D4A288 /* Frameworks */,
+				6C7EE8411F9B704700D4A288 /* Resources */,
+				886B142DFA507E75E6E1237B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = openLibreReaderWidget;
+			productName = openLibreReaderWidget;
+			productReference = 6C7EE8431F9B704700D4A288 /* openLibreReaderWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -437,6 +533,21 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = P7MBNPZ547;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					6C7EE8421F9B704700D4A288 = {
+						CreatedOnToolsVersion = 9.0;
+						DevelopmentTeam = P7MBNPZ547;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -461,6 +572,7 @@
 			projectRoot = "";
 			targets = (
 				6C6CAB791F0FB6F000810568 /* openLibreReader */,
+				6C7EE8421F9B704700D4A288 /* openLibreReaderWidget */,
 			);
 		};
 /* End PBXProject section */
@@ -498,9 +610,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6C7EE8411F9B704700D4A288 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C7EE8621F9BB21E00D4A288 /* Media.xcassets in Resources */,
+				6C7EE84C1F9B704800D4A288 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		31A8BAF03DC5F6D28BF67420 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		6371FDDA41B0782C2FDB709B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -543,6 +679,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-openLibreReader/Pods-openLibreReader-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		886B142DFA507E75E6E1237B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-openLibreReaderWidget/Pods-openLibreReaderWidget-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D1C5DDEF095EDA2FE1FE1E0F /* [CP] Embed Pods Frameworks */ = {
@@ -603,9 +754,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6C7EE83F1F9B704700D4A288 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C7EE8491F9B704800D4A288 /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		6C7EE84F1F9B704800D4A288 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6C7EE8421F9B704700D4A288 /* openLibreReaderWidget */;
+			targetProxy = 6C7EE84E1F9B704800D4A288 /* PBXContainerItemProxy */;
+		};
 		6CF394CC1F795070006EFECA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Charts;
@@ -648,6 +812,14 @@
 				6C7EE8361F97E50E00D4A288 /* de */,
 			);
 			name = about.html;
+			sourceTree = "<group>";
+		};
+		6C7EE84A1F9B704800D4A288 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C7EE84B1F9B704800D4A288 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -763,6 +935,8 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = openLibreReader/openLibreReader.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = P7MBNPZ547;
 				INFOPLIST_FILE = openLibreReader/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -778,12 +952,58 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = openLibreReader/openLibreReader.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = P7MBNPZ547;
 				INFOPLIST_FILE = openLibreReader/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.bluetoolz.openLibreReader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6C7EE8511F9B704800D4A288 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A6B634884485047D4A30DA0 /* Pods-openLibreReaderWidget.debug.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = openLibreReaderWidget/openLibreReaderWidget.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P7MBNPZ547;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = openLibreReaderWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.bluetoolz.openLibreReader.openLibreReaderWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6C7EE8521F9B704800D4A288 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28FD1ABECB81DF9FF6A393D5 /* Pods-openLibreReaderWidget.release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = openLibreReaderWidget/openLibreReaderWidget.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P7MBNPZ547;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = openLibreReaderWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.bluetoolz.openLibreReader.openLibreReaderWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -804,6 +1024,15 @@
 			buildConfigurations = (
 				6C6CAB951F0FB6F000810568 /* Debug */,
 				6C6CAB961F0FB6F000810568 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C7EE8541F9B704800D4A288 /* Build configuration list for PBXNativeTarget "openLibreReaderWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C7EE8511F9B704800D4A288 /* Debug */,
+				6C7EE8521F9B704800D4A288 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

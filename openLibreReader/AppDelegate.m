@@ -18,9 +18,17 @@
 #import "BluetoothService.h"
 #import "Alarms.h"
 
+#import <MMWormhole/MMWormhole.h>
+#import "batteryValue.h"
+#import "bgValue.h"
+#import "Storage.h"
+#import "HomeViewController.h"
+
 @interface AppDelegate ()
 @property (strong) BluetoothService* bluetoothService;
 @property (strong) Alarms* alarms;
+@property (nonatomic,strong) MMWormhole* wormhole;
+@property (nonatomic, strong)   NSMutableDictionary* wormholeData;
 @end
 
 @implementation AppDelegate
@@ -40,10 +48,100 @@
 
     _bluetoothService = [[BluetoothService alloc] init];
     [[NSNotificationCenter defaultCenter] postNotificationName:kConfigurationReloadNotification object:nil];
+    self.wormhole = [[MMWormhole alloc] initWithApplicationGroupIdentifier:@"group.bluetoolz.openbluereader"
+                                                         optionalDirectory:@"wormhole"];
+    _wormholeData = [NSMutableDictionary new];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(recieved:) name:kCalibrationBGValue object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(deviceStatus:) name:kDeviceStatusNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(recievedBattery:) name:kDeviceBatteryValueNotification object:nil];
 
     return YES;
 }
+-(void)recievedBattery:(NSNotification*)notification {
+    batteryValue* data = [notification object];
 
+    if(data.raw < [[Configuration instance].device batteryLowValue]) {
+        [_wormholeData setObject:@"battery-red" forKey:@"battery"];
+    } else if(data.raw < [[Configuration instance].device batteryFullValue]) {
+        [_wormholeData setObject:@"battery-yellow" forKey:@"battery"];
+    } else {
+        [_wormholeData setObject:@"battery-green" forKey:@"battery"];
+    }
+    [self makeWormholeData];
+}
+-(void)deviceStatus:(NSNotification*)notification
+{
+    DeviceStatus* ds = [notification object];
+    if(ds) {
+        [_wormholeData setObject:ds.statusText forKey:@"status"];
+        [self makeWormholeData];
+    }
+}
+-(void) makeWormholeData {
+    NSData* archive = [NSKeyedArchiver archivedDataWithRootObject:_wormholeData];
+    [_wormholeData setObject:[[Storage instance] getSelectedDisplayUnit] forKey:@"unit"];
+    [_wormholeData setObject:[NSNumber numberWithInt:[[Configuration instance] lowerBGLimit]] forKey:@"lowerBGLimit"];
+    [_wormholeData setObject:[NSNumber numberWithInt:[[Configuration instance] upperBGLimit]] forKey:@"upperBGLimit"];
+    [_wormholeData setObject:[NSNumber numberWithInt:[[Configuration instance] lowBGLimit]] forKey:@"lowBGLimit"];
+    [_wormholeData setObject:[NSNumber numberWithInt:[[Configuration instance] highBGLimit]] forKey:@"highBGLimit"];
+
+    [self.wormhole passMessageObject:archive
+                          identifier:@"currentData"];
+}
+-(void)recieved:(NSNotification*)notification {
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    dateFormatter.dateStyle = NSDateFormatterNoStyle;
+    dateFormatter.timeStyle = NSDateFormatterShortStyle;
+    dateFormatter.timeZone = [NSTimeZone defaultTimeZone];
+
+    [_wormholeData setObject:[dateFormatter stringFromDate: [NSDate dateWithTimeIntervalSince1970:((bgValue*)notification.object).timestamp]] forKey:@"lastTime"];
+    //[_wormholeData setObject:_drift.text forKey:@"drift"];
+    //[_wormholeData setObject:_direction.text forKey:@"direction"];
+
+    NSArray* data = [[Storage instance] bgValuesFrom:[[NSDate date]timeIntervalSince1970]-(8*60*60) to:[[NSDate date]timeIntervalSince1970]];
+    unsigned long count = [data count];
+    Configuration* c = [Configuration instance];
+
+    if(count>0) {
+        bgValue* last = ((bgValue*)[data lastObject]);
+        [_wormholeData setObject:[[Configuration instance] valueWithoutUnit:last.value] forKey:@"currentBG"];
+
+        if(count>1) {
+            bgValue* prelast = [data objectAtIndex:[data indexOfObject:last]-1];
+            double t = [last timestamp]-[prelast timestamp];
+            double d = [last value]-[prelast value];
+            t/=60;
+            double deltamin = d/t;
+            if(t>15) {
+                [_wormholeData setObject:@"---" forKey:@"drift"];
+                [_wormholeData setObject:@"" forKey:@"direction"];
+            } else {
+                [_wormholeData setObject:[NSString stringWithFormat:@"%@ %@",(d>=0?@"+":@""),[c valueWithUnit:d]] forKey:@"drift"];
+                [_wormholeData setObject:[HomeViewController slopeToArrowSymbol:deltamin] forKey:@"direction"];
+            }
+        } else {
+            [_wormholeData setObject:[NSString stringWithFormat:@"-- %@",[c displayUnit]] forKey:@"drift"];
+            [_wormholeData setObject:@"" forKey:@"direction"];
+        }
+
+    } else {
+        [_wormholeData setObject:@"--" forKey:@"drift"];
+        [_wormholeData setObject:@"" forKey:@"direction"];
+    }
+
+    NSMutableArray* valueArray = [NSMutableArray new];
+    for(bgValue* value in [[Storage instance] bgValuesFrom:[[NSDate date]timeIntervalSince1970]-(8*60*60) to:[[NSDate date]timeIntervalSince1970]]) {
+        [valueArray addObject:@{@"value":[NSNumber numberWithDouble:value.value],
+                                @"timestamp":[NSNumber numberWithDouble:value.timestamp]
+                                }];
+    }
+    [_wormholeData setObject:valueArray forKey:@"values"];
+    if([_wormholeData count]) {
+        NSData* archive = [NSKeyedArchiver archivedDataWithRootObject:_wormholeData];
+        [self.wormhole passMessageObject:archive
+                              identifier:@"currentData"];
+    }
+}
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.

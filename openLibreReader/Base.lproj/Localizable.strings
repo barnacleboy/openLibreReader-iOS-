@@ -170,6 +170,9 @@
 /* chart: no Values */
 "No Values available" = "No Values available";
 
+/* noData recieved message */
+"noDataYet" = "waiting for Data…";
+
 /* blueReader: Not able to connect to device */
 "Not able to connect to %@" = "Not able to connect to %@";
 
