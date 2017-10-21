@@ -1,0 +1,189 @@
+
+/* Class = "UILabel"; text = "+9999 mg/dl"; ObjectID = "2eX-mS-v3V"; */
+"2eX-mS-v3V.text" = "+9999 mg/dl";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "5AM-Ko-jHs"; */
+"5AM-Ko-jHs.text" = "Label";
+
+/* Class = "UILabel"; text = "999"; ObjectID = "5gL-75-y5K"; */
+"5gL-75-y5K.text" = "999";
+
+/* Class = "UILabel"; text = "label"; ObjectID = "AKK-8b-u6O"; */
+"AKK-8b-u6O.text" = "label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "JPn-po-9Qe"; */
+"JPn-po-9Qe.text" = "Label";
+
+/* Class = "UILabel"; text = "3 Minuten her"; ObjectID = "VTe-AU-kyH"; */
+"VTe-AU-kyH.text" = "3 Minuten her";
+
+/* Class = "UITabBarItem"; title = "BG Chart"; ObjectID = "acW-dT-cKf"; */
+"acW-dT-cKf.title" = "BG Chart";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "eF9-GH-3jb"; */
+"eF9-GH-3jb.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "k2w-sk-Eic"; */
+"k2w-sk-Eic.text" = "Label";
+
+/* Class = "UIViewController"; title = "Configuration"; ObjectID = "llk-hG-sKw"; */
+"llk-hG-sKw.title" = "Konfiguration";
+
+/* Class = "UILabel"; text = "⇨"; ObjectID = "m3w-JO-p9D"; */
+"m3w-JO-p9D.text" = "⇨";
+
+/* Class = "UILabel"; text = "Ident:"; ObjectID = "mAx-cZ-Alg"; */
+"mAx-cZ-Alg.text" = "Ident:";
+
+/* Class = "UILabel"; text = "Status:"; ObjectID = "qB8-vu-bce"; */
+"qB8-vu-bce.text" = "Status:";
+
+/* Class = "UIButton"; normalTitle = "Reconnect"; ObjectID = "idv-vJ-uty"; */
+"idv-vJ-uty.normalTitle" = "Verbinden";
+
+/* Class = "UIViewController"; title = "Settings"; ObjectID = "9tu-cg-Iwj"; */
+"9tu-cg-Iwj.title" = "Einstellungen";
+
+/* Class = "UINavigationItem"; title = "Settings"; ObjectID = "eXg-Mq-8Zc"; */
+"eXg-Mq-8Zc.title" = "Einstellungen";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "GWJ-xQ-LMW"; */
+"GWJ-xQ-LMW.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "jh8-bV-2vM"; */
+"jh8-bV-2vM.text" = "Label";
+
+/* Class = "UIViewController"; title = "blueReader Settings"; ObjectID = "8rJ-Kc-sve"; */
+"8rJ-Kc-sve.title" = "blueReader Einstellungen";
+
+/* Class = "UINavigationItem"; title = "blueReader Settings"; ObjectID = "9e0-Gi-cyX"; */
+"9e0-Gi-cyX.title" = "blueReader Einstellungen";
+
+/* Class = "UILabel"; text = "Batteriegraph:"; ObjectID = "diV-TG-XRm"; */
+"diV-TG-XRm.text" = "Batterieanzeige:";
+
+/* Class = "UILabel"; text = "Deviceinfo:"; ObjectID = "kvO-Md-8rh"; */
+"kvO-Md-8rh.text" = "Geräteinformationen:";
+
+/* Class = "UILabel"; text = "loading…"; ObjectID = "YT5-lo-JG8"; */
+"YT5-lo-JG8.text" = "lade…";
+
+/* Class = "UIButton"; normalTitle = "forget Device"; ObjectID = "oZM-6D-gcq"; */
+"oZM-6D-gcq.normalTitle" = "Gerät entfernen";
+
+/* Class = "UITabBarItem"; title = "Settings"; ObjectID = "SzA-aq-tyV"; */
+"SzA-aq-tyV.title" = "Einstellungen";
+
+/* Class = "UILabel"; text = "Low BG Value (red):"; ObjectID = "HG8-Np-Ry5"; */
+"HG8-Np-Ry5.text" = "Unterzucker (rot):";
+
+/* Class = "UILabel"; text = "Above BG Value (yellow):"; ObjectID = "JpW-UP-w12"; */
+"JpW-UP-w12.text" = "erhöhter Wert (gelb):";
+
+/* Class = "UIViewController"; title = "Limit Settings"; ObjectID = "UaZ-gs-eVC"; */
+"UaZ-gs-eVC.title" = "Grenzen Einstellen";
+
+/* Class = "UILabel"; text = "below BG Value (yellow):"; ObjectID = "e8M-J9-9Uo"; */
+"e8M-J9-9Uo.text" = "niedriger Wert (gelb):";
+
+/* Class = "UILabel"; text = "High BG Value (red):"; ObjectID = "rcA-eE-Sh3"; */
+"rcA-eE-Sh3.text" = "zu hoher Wert (rot):";
+
+/* Class = "UINavigationItem"; title = "Limit Settings"; ObjectID = "wr9-CD-x2N"; */
+"wr9-CD-x2N.title" = "Grenzen Einstellen";
+
+/* Class = "UIButton"; normalTitle = "shutdown Device"; ObjectID = "8vz-ul-7Sf"; */
+"8vz-ul-7Sf.normalTitle" = "blueReader Ausschalten";
+
+/* Class = "UINavigationItem"; title = "Alarm Settings"; ObjectID = "7Up-tZ-Rdx"; */
+"7Up-tZ-Rdx.title" = "Alarm Einstellungen";
+
+/* Class = "UILabel"; text = "repeat no Data Alarm:"; ObjectID = "As0-Pu-xPa"; */
+"As0-Pu-xPa.text" = "keine Daten Alarm wiederholen:";
+
+/* Class = "UIViewController"; title = "Alarm Settings"; ObjectID = "CPw-d1-2pq"; */
+"CPw-d1-2pq.title" = "Alarm Einstellungen";
+
+/* Class = "UILabel"; text = "repeat Low Alarm:"; ObjectID = "IPl-ki-6c4"; */
+"IPl-ki-6c4.text" = "Niedrigalarm wiederholen:";
+
+/* Class = "UILabel"; text = "keep App and iPhone awake:"; ObjectID = "aq0-cG-K0M"; */
+"aq0-cG-K0M.text" = "iPhone und App wach halten";
+
+/* Class = "UILabel"; text = "no Data Alarm Minutes:"; ObjectID = "fN2-1d-fYN"; */
+"fN2-1d-fYN.text" = "kein Daten Alarm nach Minuten:";
+
+/* Class = "UILabel"; text = "repeat High Alarm:"; ObjectID = "rAn-OV-T4X"; */
+"rAn-OV-T4X.text" = "Hochalarm wiederholen:";
+
+/* Class = "UILabel"; text = "High Alarm Value:"; ObjectID = "tFO-nv-mpU"; */
+"tFO-nv-mpU.text" = "Hochalarm Wert:";
+
+/* Class = "UILabel"; text = "Low Alarm Value:"; ObjectID = "uf3-5s-mly"; */
+"uf3-5s-mly.text" = "Niedrigalarm Wert:";
+
+/* Class = "UILabel"; text = "Ignore iPhone Mute:"; ObjectID = "yQT-fi-kgS"; */
+"yQT-fi-kgS.text" = "iPhone Stumm ignorieren:";
+
+/* Class = "UILabel"; text = "nightscout URL"; ObjectID = "0pl-Tn-gd2"; */
+"0pl-Tn-gd2.text" = "nightscout URL";
+
+/* Class = "UITextField"; placeholder = "https://my-ns-site.herokuapp.com"; ObjectID = "GuH-J1-J6c"; */
+"GuH-J1-J6c.placeholder" = "https://my-ns-site.herokuapp.com";
+
+/* Class = "UITextField"; placeholder = "012345678912"; ObjectID = "Gzq-kS-AhI"; */
+"Gzq-kS-AhI.placeholder" = "012345678912";
+
+/* Class = "UIButton"; normalTitle = "Test Connection"; ObjectID = "N81-8A-AKb"; */
+"N81-8A-AKb.normalTitle" = "Verbindung prüfen";
+
+/* Class = "UINavigationItem"; title = "nightscout Settings"; ObjectID = "ZZL-GM-hmk"; */
+"ZZL-GM-hmk.title" = "nightscout Einstellungen";
+
+/* Class = "UILabel"; text = "nightscout Upload"; ObjectID = "hbL-8x-dv3"; */
+"hbL-8x-dv3.text" = "nightscout Upload:";
+
+/* Class = "UILabel"; text = "nightscout password"; ObjectID = "hz1-gP-t3Q"; */
+"hz1-gP-t3Q.text" = "nightscout Password:";
+
+/* Class = "UIViewController"; title = "nightscout Settings"; ObjectID = "zHi-QE-bIJ"; */
+"zHi-QE-bIJ.title" = "nightscout Einstellungen";
+
+/* Class = "UILabel"; text = "Read interval Minutes:"; ObjectID = "2xs-Ek-1H2"; */
+"2xs-Ek-1H2.text" = "Ausleseintervall in Minuten";
+
+/* Class = "UILabel"; text = "nightscout password"; ObjectID = "2GN-v1-Jbx"; */
+"2GN-v1-Jbx.text" = "nightscout Passwort:";
+
+/* Class = "UIViewController"; title = "nightscout Settings"; ObjectID = "6IF-Mf-P3Z"; */
+"6IF-Mf-P3Z.title" = "nightscout Einstellungen";
+
+/* Class = "UILabel"; text = "nightscout URL"; ObjectID = "7eU-je-4Ph"; */
+"7eU-je-4Ph.text" = "nightscout URL";
+
+/* Class = "UIButton"; normalTitle = "Test Connection"; ObjectID = "CKz-JP-oZa"; */
+"CKz-JP-oZa.normalTitle" = "Verbindung prüfen";
+
+/* Class = "UITextField"; placeholder = "https://my-ns-site.herokuapp.com"; ObjectID = "Sx8-DL-LWX"; */
+"Sx8-DL-LWX.placeholder" = "https://my-ns-site.herokuapp.com";
+
+/* Class = "UINavigationItem"; title = "nightscout Settings"; ObjectID = "lCS-Yt-lEI"; */
+"lCS-Yt-lEI.title" = "nightscout Einstellungen";
+
+/* Class = "UITextField"; placeholder = "012345678912"; ObjectID = "ny0-Lb-cOT"; */
+"ny0-Lb-cOT.placeholder" = "012345678912";
+
+/* Class = "UIButton"; normalTitle = "forget Device"; ObjectID = "xdl-VD-3Uz"; */
+"xdl-VD-3Uz.normalTitle" = "Gerät entfernen";
+
+/* Class = "UIViewController"; title = "About"; ObjectID = "25V-g3-o35"; */
+"25V-g3-o35.title" = "Über diese App";
+
+/* Class = "UINavigationItem"; title = "About"; ObjectID = "Mbj-sn-Nhb"; */
+"Mbj-sn-Nhb.title" = "Über diese App";
+
+/* Class = "UINavigationItem"; title = "Choose Device…"; ObjectID = "b7s-er-fmx"; */
+"b7s-er-fmx.title" = "Gerät wählen…";
+
+/* Class = "UILabel"; text = "Searching devices…"; ObjectID = "GEW-YO-Ilo"; */
+"GEW-YO-Ilo.text" = "suche Geräte…";

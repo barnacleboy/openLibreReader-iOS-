@@ -1,0 +1,6 @@
+framework module Pods_openLibreReader {
+  umbrella header "Pods-openLibreReader-umbrella.h"
+
+  export *
+  module * { export * }
+}

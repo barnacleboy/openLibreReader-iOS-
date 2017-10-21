@@ -1,0 +1,234 @@
+
+/* last reading */
+"%d %@ ago" = "%1$d %2$@ her";
+
+/* alarmalert.title */
+"1 hour" = "1 Stunde";
+
+/* alarmalert.title */
+"2 hours" = "2 Stunden";
+
+/* alarmalert.title */
+"30 minutes" = "30 Minuten";
+
+/* about.title */
+"About" = "Über diese App";
+
+/* about.description */
+"About this app and Disclaimer.\n" = "About this App and rechtliche information";
+
+/* chart: above target */
+"Above Target" = "über Ziel";
+
+/* alarms.title */
+"Alarms" = "Alarme";
+
+/* notification.highBody */
+"Attention, value is above %@!" = "Achtung, Wert über %@!";
+
+/* notification.lowBody */
+"Attention, value is below %@!" = "Achtung, Wert unter %@!";
+
+/* chart: below target */
+"Below Target" = "unter Ziel";
+
+/* blueReader: sensor ok */
+"blueReader ok" = "blueReader ok";
+
+/* alarmalert.title */
+"Cancel" = "Abbrechen";
+
+/* blueReader.cancel */
+"cancel" = "Abbrechen";
+
+/* unitalert.change */
+"Change the Unit" = "Die Anzeigeeinheit ändern";
+
+/* displayUnit.description */
+"Change the Unit for glucose Values" = "Angezeigte Einheit verändern";
+
+/* unitalert.title */
+"Change Unit" = "Anzeigeeinheit ändern";
+
+/* nsUpload.close */
+"close" = "schließen";
+
+/* Configuration Headline */
+"Configuration %d/%lu" = "Konfiguration %1$d/%2$lu";
+
+/* alarms.description */
+"Configure Alarms" = "Alarme bearbeiten";
+
+/* nightscout.description */
+"Configure the NIghtscout Uploader to push bg data to a nightscout instance.\nNightscout following is configured in device." = "Den Nightscout Uploader lädt Daten zu einer nightscout Instanz hoch.\nDas folgen einer Nightscout Instanz wird in Gerät konfiguriert.";
+
+/* limit.description */
+"Configure Values for high and Low Values" = "Wertebereiche bearbeiten";
+
+/* nightscout: connected */
+"connected" = "verbunden";
+
+/* blueReader: connected device */
+"Connected to %@" = "Verbunden mit %@";
+
+/* nightscout: recieving */
+"connected, recieving" = "verbunden, empfange";
+
+/* nightscout: connecting */
+"connecting" = "verbinde";
+
+/* blueReader: conencting to device */
+"Connecting to %@" = "Verbinde zu %@";
+
+/* nsUpload.titleNoSuccess */
+"Connection not Successful!" = "Verbindung nicht erfolgreich!";
+
+/* nsUpload.titleSuccess */
+"Connection Successful!" = "Verbindung erfolgreich";
+
+/* last reading day */
+"day" = "Tag";
+
+/* last reading days */
+"days" = "Tage";
+
+/* NoCalibration: default Headline */
+"Default Calibration" = "Standard Kalibration";
+
+/* device.title */
+"Device" = "Gerät";
+
+/* alarmalert.title */
+"Disable Alarms" = "Alarm deaktivieren";
+
+/* blueReader: disconnect from device */
+"Disconnected from %@" = "Getrennt von %@";
+
+/* displayUnit.title */
+"Display Unit" = "Einheit";
+
+/* NoCalibration: description */
+"Does not apply any Calibration to the recieved Value." = "Keine Kalibration wird benutzt.";
+
+/* nightscout: failed */
+"failed to connect" = "Verbindung fehlgeschlagen";
+
+/* firmware text */
+"Firmware: %@\nProtocol: %@" = "Firmware: %@\nProtokoll: %@";
+
+/* chart: FullBat */
+"FullBat" = "voll";
+
+/* chart: high value */
+"High" = "Hoch";
+
+/* notification.highTitle */
+"High Value!" = "Achtung, Wert zu hoch!";
+
+/* last reading hour */
+"hour" = "Stunde";
+
+/* last reading hours */
+"hours" = "Stunden";
+
+/* limit.title */
+"Limit Values" = "Grenzen";
+
+/* nightscout: disconnected */
+"lost connection" = "Verbindung verloren";
+
+/* chart: low */
+"Low" = "Niedrig";
+
+/* notification.lowTitle */
+"Low Value!" = "Achtung, Wert zu niedrig!";
+
+/* chart: LowBat */
+"LowBat" = "leer";
+
+/* last reading minute */
+"minute" = "Minute";
+
+/* last reading minutes */
+"minutes" = "Minuten";
+
+/* nightscout.title */
+"Nightscout Uploader" = "Nightscout Uploader";
+
+/* notification.noDataBody */
+"no Data for %d minutes" = "keine Daten für %d Minuten!";
+
+/* chart: no Data */
+"no Data recieved" = "keine Daten empfangen";
+
+/* notification.noDataTitle */
+"no Data!" = "Achtung, keine Daten empfangen!";
+
+/* blueReader: no Sensor */
+"No Sensor found" = "Kein Sensor gefunden";
+
+/* chart: no Values */
+"No Values available" = "keine Daten verfügbar";
+
+/* blueReader: Not able to connect to device */
+"Not able to connect to %@" = "Keine Verbindung zu %@";
+
+/* notification.app */
+"Open opneLibreReader" = "openLibreReader App öffnen";
+
+/* nsUpload.failMessage */
+"Please check URL and Password, please enter only the URL you would use in a Webbrowser." = "Bitte URL und Passwort überprüfen. Nur die URL eingeben die auch im Webbrowser benutzt wird.";
+
+/* RandomCalibration: headline */
+"Random Calibration" = "zufällige Kalibration";
+
+/* blueReader: reloading
+   nightscout: reloading */
+"reloading" = "wird geladen";
+
+/* blueReader.remove
+   blueReader.title */
+"Remove Device" = "Gerät entfernen";
+
+/* last reading second */
+"second" = "Sekunde";
+
+/* last reading seconds */
+"seconds" = "Sekunden";
+
+/* device.description */
+"Select and configure used Device" = "Gerät auswählen und einrichten";
+
+/* settings title */
+"Settings" = "Einstellungen";
+
+/* blueReader.shutdown
+   blueReader.titleShutdown */
+"Shutdown Device" = "Gerät Ausschalten";
+
+/* notification.1 */
+"Snooze for 1h" = "1 Stunde schlummern";
+
+/* notification.2 */
+"Snooze for 2h" = "2 Stunden schlummern";
+
+/* notification.30 */
+"Snooze for 30 minutes" = "30 Minuten schlimmern";
+
+/* blueReader: Description */
+"The blueReader is used to fetch values from the libre Tag.\nThe interval of fetches can be configured in 1 minute intervals." = "Der blueReader wird für die Datenübertragung verwendet.\nDas Interval der Auslesung kann in minütlichen Schritten festgelegt werden.";
+
+/* RandomCalibration: description */
+"The correct (without any calibration applied) raw value is saved to database, but the display value is randomized to test varoius functions." = "Die Werte werden ohne Kalibration gesichert, aber zufällige Werte werden angezeigt. (Nur für Tests verschiedener Funktionen zu verwenden!)";
+
+/* alarmalert.title */
+"until re-enable" = "Bis zum Einschalten";
+
+/* Description for mg/dl unit */
+"use this if your values are measured in mg/dl, typically between 50 and 300" = "Diese Option für Werte in mg/dl benutzen, typischerweise liegen diese zwischen 50 und 300";
+
+/* Description for mmol unit */
+"use this if your values are measured in mmol, typically between 3.3 and 9.5" = "Diese Option für Werte in mmol benutzen, typischerweise liegen diese zwischen 3.3 und 9.5";
+
+/* nightscout: Description */
+"Values are recieved from a Nightscout instance.\nAlarms might stop working, if app is not actively showing." = "Werte werden von einer Nightscout Instanz empfangen.\nWenn die App nicht angezeigt wird, können keine Daten empfangen werden und Alarme ausgelöst werden!";
