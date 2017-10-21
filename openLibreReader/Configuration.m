@@ -218,7 +218,7 @@ static Configuration* __instance;
                                          @"lowRepeat":[NSNumber numberWithBool:YES],
                                          @"lowBG":[NSNumber numberWithInt:70],
                                          @"noDataRepeat":[NSNumber numberWithBool:YES],
-                                         @"noDataMinutes":[NSNumber numberWithInt:2],
+                                         @"noDataMinutes":[NSNumber numberWithInt:10],
                                          };
     return [NSMutableDictionary dictionaryWithDictionary:defaultData];
 
