@@ -373,7 +373,6 @@
     if(ds) {
         dispatch_async(dispatch_get_main_queue(), ^{
             _statusLabel.text = ds.statusText;
-
             if(ds.status == NO_DEVICE)
             {
                 [self connectDevice:nil];
@@ -401,7 +400,6 @@
 
     double min = low-30;
     double max = high+50;
-
 
     ChartDataEntry* entry = [[ChartDataEntry alloc] initWithX:[data timestamp] y:[data value]];
     //FIXME insert at correct point.x!
@@ -463,7 +461,9 @@
     int high = [c highBGLimit];
 
     double min = low-30;
-    double max = high+50;LineChartDataSet *set1 = nil;
+    double max = high+50;
+
+    LineChartDataSet *set1 = nil;
     if (_chartView.data.dataSetCount > 0) {
         int r = 0;
         for(ChartDataEntry* e in _data) {
