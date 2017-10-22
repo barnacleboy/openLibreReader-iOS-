@@ -48,6 +48,9 @@
                                              selector:@selector(send:)
                                                  name:BLUETOOTH_SEND_DATA object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(read:)
+                                                 name:BLUETOOTH_READ_CHARACTERISTIC object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(disconnectAll:)
                                                  name:BLUETOOTH_DISCONNECT_ALL_DEVICES object:nil];
 
@@ -174,6 +177,18 @@
     else if ((characteristic.properties & CBCharacteristicPropertyWrite) != 0)
     {
         [characteristic.service.peripheral writeValue:data forCharacteristic:characteristic type:CBCharacteristicWriteWithResponse];
+    }
+}
+
+-(void) read:(NSNotification*)notification {
+    [[Storage instance] log:[NSString stringWithFormat:@"reading from %@",[notification object]] from:@"BluetoothService"];
+    CBCharacteristic* characteristic = notification.object;
+    if(![characteristic isNotifying]) {
+        [characteristic.service.peripheral setNotifyValue:YES forCharacteristic:characteristic];
+    }
+    if ((characteristic.properties & CBCharacteristicPropertyRead) != 0)
+    {
+        [characteristic.service.peripheral readValueForCharacteristic:characteristic];
     }
 }
 @end

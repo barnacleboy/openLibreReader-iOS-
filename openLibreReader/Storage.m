@@ -315,6 +315,41 @@ static Storage* __instance;
     return nil;
 }
 
+-(bgRawValue*) lastRawBgBefore:(NSTimeInterval)before {
+    @try{
+        [_dbLock lock];
+        [self openValueDB];
+        sqlite3_stmt *statement = nil;
+        if (sqlite3_prepare_v2(_db, "select raw_source,raw_data,value from bg_values where timestamp < ? order by timestamp desc limit 1", -1, &statement, NULL) == SQLITE_OK) {
+            sqlite3_bind_int64(statement, 1, (unsigned long)before);
+        } else{
+            [self log:@"unable to get last bg before" from:@"Storage"];
+            [self closeValueDB];
+            return nil;
+        }
+
+        bgRawValue* bg = nil;
+        if (sqlite3_step(statement) == SQLITE_ROW) {
+            const char* source = (char*)sqlite3_column_text(statement, 0);
+            const void *raw_ptr = sqlite3_column_blob(statement, 1);
+            int raw_size = sqlite3_column_bytes(statement, 1);
+            NSData* raw_data = [[NSData alloc] initWithBytes:raw_ptr length:raw_size];
+            const double value =sqlite3_column_double(statement, 2);
+
+            bg = [[bgRawValue alloc] initWith:value withData:raw_data from:[NSString stringWithCString:source encoding:NSUTF8StringEncoding]];
+
+        }
+        sqlite3_finalize(statement);
+
+        [self closeValueDB];
+        [_dbLock unlock];
+        return bg;
+    }@catch(NSException *e){
+        NSLog(@"got error on %@",[e debugDescription]);
+    }
+    return nil;
+}
+
 -(BOOL) addBatteryValue:(int)volt raw:(int)raw source:(NSString*)source device:(Class)device {
     @try {
         [_batteryLock lock];

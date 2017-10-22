@@ -104,6 +104,9 @@
 /* blueReader: disconnect from device */
 "Disconnected from %@" = "Disconnected from %@";
 
+/* limitter: disconnect from device */
+"Disconnected from %@, waiting for next" = "Disconnected from %@, waiting for reconnect";
+
 /* displayUnit.title */
 "Display Unit" = "Display Unit";
 
@@ -133,6 +136,12 @@
 
 /* limit.title */
 "Limit Values" = "Limit Values";
+
+/* limitter: no data found */
+"limitter failed" = "No Data in Transmission";
+
+/* limitter: sensor ok */
+"limitter ok" = "Data recieved";
 
 /* nightscout: disconnected */
 "lost connection" = "lost connection";
@@ -166,6 +175,9 @@
 
 /* blueReader: no Sensor */
 "No Sensor found" = "No Sensor found";
+
+/* limitter.nosensorage */
+"No Sensorage found" = "No Sensorage found";
 
 /* chart: no Values */
 "No Values available" = "No Values available";
@@ -202,6 +214,9 @@
 /* device.description */
 "Select and configure used Device" = "Select and configure used Device";
 
+/* limitter.sensorage */
+"Sensor running for %d days, %d hours and %d minutes" = "Sensor running for %d days, %d hours and %d minutes";
+
 /* settings title */
 "Settings" = "Settings";
 
@@ -223,6 +238,12 @@
 
 /* RandomCalibration: description */
 "The correct (without any calibration applied) raw value is saved to database, but the display value is randomized to test varoius functions." = "The correct (without any calibration applied) raw value is saved to database, but the display value is randomized to test varoius functions.";
+
+/* limitter: Description */
+"The limitter is used to fetch values from the libre Tag." = "The LimiTTer is a do it yourself transmitter.\nValues can be missed if app is in background!";
+
+/* limitter: Description */
+"The LimiTTer is used to fetch values from the libre Tag." = "LimiTTer diy transmitter.";
 
 /* alarmalert.title */
 "until re-enable" = "until re-enable";

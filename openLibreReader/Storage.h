@@ -16,6 +16,7 @@
 -(NSArray*) bgValuesFrom:(NSTimeInterval)from to:(NSTimeInterval)to;
 -(NSTimeInterval) lastBGValue;
 -(bgValue*) lastBgBefore:(NSTimeInterval)before;
+-(bgRawValue*) lastRawBgBefore:(NSTimeInterval)before;
 
 -(BOOL) addBatteryValue:(int)volt raw:(int)raw source:(NSString*)source device:(Class)device;
 -(NSArray*) batteryValuesFrom:(NSTimeInterval)from to:(NSTimeInterval)to;

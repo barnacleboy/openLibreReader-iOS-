@@ -11,6 +11,8 @@
 		1CE49751753053630FACE449 /* Pods_openLibreReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C7EE85A1F9B708F00D4A288 /* Pods_openLibreReader.framework */; };
 		5CC91AA9BCBF6B83F9EA9733 /* Pods_openLibreReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69010E584FBC43C6715AC1E5 /* Pods_openLibreReader.framework */; };
 		6C0D172A1F7196E500050A73 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6C0D172C1F7196E500050A73 /* Localizable.strings */; };
+		6C4184CD1F9BCFA400B156F7 /* limitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C4184CB1F9BCFA300B156F7 /* limitter.m */; };
+		6C4184D01F9CCA4C00B156F7 /* limitterDeviceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C4184CF1F9CCA4C00B156F7 /* limitterDeviceViewController.m */; };
 		6C56D4F41F969F43000BC92A /* NSUploadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C56D4F31F969F43000BC92A /* NSUploadViewController.m */; };
 		6C56D4F71F9795CA000BC92A /* nightscoutDeviceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C56D4F51F9795C9000BC92A /* nightscoutDeviceViewController.m */; };
 		6C59E73F1F5C633B004CC390 /* DeviceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C59E73E1F5C633B004CC390 /* DeviceViewController.m */; };
@@ -132,6 +134,10 @@
 		69010E584FBC43C6715AC1E5 /* Pods_openLibreReader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_openLibreReader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C0D172B1F7196E500050A73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6C0D172F1F71A03500050A73 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		6C4184CB1F9BCFA300B156F7 /* limitter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = limitter.m; sourceTree = "<group>"; };
+		6C4184CC1F9BCFA400B156F7 /* limitter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = limitter.h; sourceTree = "<group>"; };
+		6C4184CE1F9CCA4B00B156F7 /* limitterDeviceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = limitterDeviceViewController.h; sourceTree = "<group>"; };
+		6C4184CF1F9CCA4C00B156F7 /* limitterDeviceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = limitterDeviceViewController.m; sourceTree = "<group>"; };
 		6C56D4F11F969F43000BC92A /* NSUploadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSUploadViewController.h; sourceTree = "<group>"; };
 		6C56D4F31F969F43000BC92A /* NSUploadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSUploadViewController.m; sourceTree = "<group>"; };
 		6C56D4F51F9795C9000BC92A /* nightscoutDeviceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = nightscoutDeviceViewController.m; sourceTree = "<group>"; };
@@ -305,6 +311,10 @@
 				6CF394CD1F7A82B8006EFECA /* nightscout.m */,
 				6C56D4F61F9795CA000BC92A /* nightscoutDeviceViewController.h */,
 				6C56D4F51F9795C9000BC92A /* nightscoutDeviceViewController.m */,
+				6C4184CC1F9BCFA400B156F7 /* limitter.h */,
+				6C4184CB1F9BCFA300B156F7 /* limitter.m */,
+				6C4184CE1F9CCA4B00B156F7 /* limitterDeviceViewController.h */,
+				6C4184CF1F9CCA4C00B156F7 /* limitterDeviceViewController.m */,
 			);
 			name = Device;
 			sourceTree = "<group>";
@@ -719,6 +729,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6C6C81091F912C9800DE3B8C /* ConfigurationListTableViewCell.m in Sources */,
+				6C4184D01F9CCA4C00B156F7 /* limitterDeviceViewController.m in Sources */,
 				6C6C80F41F86841A00DE3B8C /* Alarms.m in Sources */,
 				6C59E7591F5DA69F004CC390 /* blueReader.m in Sources */,
 				6C6CABB91F10112600810568 /* Storage.m in Sources */,
@@ -735,6 +746,7 @@
 				6C6CAB821F0FB6F000810568 /* AppDelegate.m in Sources */,
 				6C64BFF11F6F16E900879A51 /* mgdl.m in Sources */,
 				6C6CABCF1F12B0B200810568 /* batteryValue.m in Sources */,
+				6C4184CD1F9BCFA400B156F7 /* limitter.m in Sources */,
 				6C56D4F41F969F43000BC92A /* NSUploadViewController.m in Sources */,
 				6C6CABC11F11B69D00810568 /* Calibration.m in Sources */,
 				6CF394CF1F7A82B8006EFECA /* nightscout.m in Sources */,

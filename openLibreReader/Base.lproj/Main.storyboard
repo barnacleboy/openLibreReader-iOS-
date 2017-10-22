@@ -598,6 +598,7 @@
                         <segue destination="zHi-QE-bIJ" kind="show" identifier="nightscout" id="w9a-gm-7pL"/>
                         <segue destination="6IF-Mf-P3Z" kind="show" identifier="nightscoutDevice" id="5wi-Dq-W4r"/>
                         <segue destination="25V-g3-o35" kind="show" identifier="about" id="ots-qp-lVs"/>
+                        <segue destination="Udd-kg-u9c" kind="show" identifier="limitterDeviceSettings" id="BMS-cy-mKK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="brz-oA-ZbW" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1023,7 +1024,6 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="resetConfiguration:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="duV-8O-Cpo"/>
                                     <action selector="resetConfiguration:" destination="6IF-Mf-P3Z" eventType="touchUpInside" id="zS8-5Y-Oeb"/>
                                 </connections>
                             </button>
@@ -1041,6 +1041,89 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6pO-42-SkB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="741" y="2685"/>
+        </scene>
+        <!--LimitterDeviceViewController-->
+        <scene sceneID="SWI-Dz-MLw">
+            <objects>
+                <viewController storyboardIdentifier="limitterDeviceViewController" title="LimiTTer Settings" id="Udd-kg-u9c" userLabel="LimitterDeviceViewController" customClass="limitterDeviceViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7vy-JX-weu"/>
+                        <viewControllerLayoutGuide type="bottom" id="gSz-Tc-h3O"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KEN-Vk-Lac">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gC1-0g-i1N">
+                                <rect key="frame" x="20" y="455" width="280" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" red="0.90601851850000004" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <state key="normal" title="forget Device">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetConfiguration:" destination="Udd-kg-u9c" eventType="touchUpInside" id="mlu-KA-7H9"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Batteriegraph:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dy2-Jl-tIp">
+                                <rect key="frame" x="16" y="64" width="284" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="mQ6-G1-fb1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sensorage:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="80" translatesAutoresizingMaskIntoConstraints="NO" id="Q4n-Ki-mRT">
+                                <rect key="frame" x="16" y="348" width="288" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="rA6-Gs-Jfe"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="sfv-dA-i48"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DMu-qu-vkh" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="16" y="90" width="288" height="250"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="TTW-R3-fyW"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="loading…" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L4g-f2-Rtb">
+                                <rect key="frame" x="16" y="373" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="L4g-f2-Rtb" firstAttribute="trailing" secondItem="KEN-Vk-Lac" secondAttribute="trailingMargin" id="57q-DW-mKP"/>
+                            <constraint firstItem="dy2-Jl-tIp" firstAttribute="leading" secondItem="KEN-Vk-Lac" secondAttribute="leadingMargin" id="9Dg-nG-TUD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dy2-Jl-tIp" secondAttribute="trailing" constant="4" id="BjC-4a-nwP"/>
+                            <constraint firstItem="DMu-qu-vkh" firstAttribute="trailing" secondItem="KEN-Vk-Lac" secondAttribute="trailingMargin" id="Jtn-Wf-gqa"/>
+                            <constraint firstItem="Q4n-Ki-mRT" firstAttribute="leading" secondItem="KEN-Vk-Lac" secondAttribute="leadingMargin" id="KM9-H0-w9F"/>
+                            <constraint firstItem="DMu-qu-vkh" firstAttribute="top" secondItem="dy2-Jl-tIp" secondAttribute="bottom" constant="5" id="L2y-w2-yyg"/>
+                            <constraint firstItem="L4g-f2-Rtb" firstAttribute="top" secondItem="Q4n-Ki-mRT" secondAttribute="bottom" constant="4" id="YvE-TK-dwa"/>
+                            <constraint firstItem="DMu-qu-vkh" firstAttribute="leading" secondItem="KEN-Vk-Lac" secondAttribute="leadingMargin" id="ZgX-n5-DxM"/>
+                            <constraint firstItem="dy2-Jl-tIp" firstAttribute="top" secondItem="7vy-JX-weu" secondAttribute="bottom" id="cNc-rw-Nr0"/>
+                            <constraint firstItem="L4g-f2-Rtb" firstAttribute="leading" secondItem="KEN-Vk-Lac" secondAttribute="leadingMargin" id="mYz-BK-GDd"/>
+                            <constraint firstItem="Q4n-Ki-mRT" firstAttribute="top" secondItem="DMu-qu-vkh" secondAttribute="bottom" constant="8" id="pkp-RG-o00"/>
+                            <constraint firstItem="Q4n-Ki-mRT" firstAttribute="trailing" secondItem="KEN-Vk-Lac" secondAttribute="trailingMargin" id="zdg-Zr-KCa"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="chartView" destination="DMu-qu-vkh" id="BA3-TM-78Q"/>
+                        <outlet property="info" destination="L4g-f2-Rtb" id="gzM-8j-q8A"/>
+                    </connections>
+                </viewController>
+                <navigationItem title="LimiTTer Settings" id="th6-GJ-kId"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QFK-ay-LwZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-58.125" y="1918.3098591549297"/>
         </scene>
     </scenes>
     <resources>

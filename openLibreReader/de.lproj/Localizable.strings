@@ -104,6 +104,9 @@
 /* blueReader: disconnect from device */
 "Disconnected from %@" = "Getrennt von %@";
 
+/* limitter: disconnect from device */
+"Disconnected from %@, waiting for next" = "Getrennt von %@, warte auf Verbindung";
+
 /* displayUnit.title */
 "Display Unit" = "Einheit";
 
@@ -133,6 +136,12 @@
 
 /* limit.title */
 "Limit Values" = "Grenzen";
+
+/* limitter: no data found */
+"limitter failed" = "keine Daten von LimiTTer empfangen";
+
+/* limitter: sensor ok */
+"limitter ok" = "LimiTTer Daten empfangen";
 
 /* nightscout: disconnected */
 "lost connection" = "Verbindung verloren";
@@ -166,6 +175,9 @@
 
 /* blueReader: no Sensor */
 "No Sensor found" = "Kein Sensor gefunden";
+
+/* limitter.nosensorage */
+"No Sensorage found" = "Sensoralter nicht verfügbar.";
 
 /* chart: no Values */
 "No Values available" = "keine Daten verfügbar";
@@ -202,6 +214,9 @@
 /* device.description */
 "Select and configure used Device" = "Gerät auswählen und einrichten";
 
+/* limitter.sensorage */
+"Sensor running for %d days, %d hours and %d minutes" = "Sensor läuft seit %d Tagen, %d Stunden und %d minuten";
+
 /* settings title */
 "Settings" = "Einstellungen";
 
@@ -223,6 +238,12 @@
 
 /* RandomCalibration: description */
 "The correct (without any calibration applied) raw value is saved to database, but the display value is randomized to test varoius functions." = "Die Werte werden ohne Kalibration gesichert, aber zufällige Werte werden angezeigt. (Nur für Tests verschiedener Funktionen zu verwenden!)";
+
+/* limitter: Description */
+"The limitter is used to fetch values from the libre Tag." = "Der LimiTTer selbstbau Transmitter.\nWährend die App im Hintergrund ist, können Daten verpasst werden!";
+
+/* limitter: Description */
+"The LimiTTer is used to fetch values from the libre Tag." = "LimiTTer diy Transmitter";
 
 /* alarmalert.title */
 "until re-enable" = "Bis zum Einschalten";

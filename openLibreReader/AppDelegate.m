@@ -14,6 +14,7 @@
 
 #import "blueReader.h"
 #import "nightscout.h"
+#import "limitter.h"
 
 #import "BluetoothService.h"
 #import "Alarms.h"
@@ -45,6 +46,7 @@
 
     registerDevice([blueReader class]);
     registerDevice([nightscout class]);
+    registerDevice([limitter class]);
 
     _bluetoothService = [[BluetoothService alloc] init];
     [[NSNotificationCenter defaultCenter] postNotificationName:kConfigurationReloadNotification object:nil];

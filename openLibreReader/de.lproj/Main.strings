@@ -187,3 +187,21 @@
 
 /* Class = "UILabel"; text = "Searching devices…"; ObjectID = "GEW-YO-Ilo"; */
 "GEW-YO-Ilo.text" = "suche Geräte…";
+
+/* Class = "UILabel"; text = "loading…"; ObjectID = "L4g-f2-Rtb"; */
+"L4g-f2-Rtb.text" = "lade…";
+
+/* Class = "UILabel"; text = "Sensorage:"; ObjectID = "Q4n-Ki-mRT"; */
+"Q4n-Ki-mRT.text" = "Sensoralter:";
+
+/* Class = "UIViewController"; title = "LimiTTer Settings"; ObjectID = "Udd-kg-u9c"; */
+"Udd-kg-u9c.title" = "LimiTTer Einstellungen";
+
+/* Class = "UILabel"; text = "Batteriegraph:"; ObjectID = "dy2-Jl-tIp"; */
+"dy2-Jl-tIp.text" = "Batterieanzeige";
+
+/* Class = "UIButton"; normalTitle = "forget Device"; ObjectID = "gC1-0g-i1N"; */
+"gC1-0g-i1N.normalTitle" = "Gerät entfernen";
+
+/* Class = "UINavigationItem"; title = "LimiTTer Settings"; ObjectID = "th6-GJ-kId"; */
+"th6-GJ-kId.title" = "LimiTTer Einstellungen";
