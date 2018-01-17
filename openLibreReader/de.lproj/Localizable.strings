@@ -11,6 +11,9 @@
 /* alarmalert.title */
 "30 minutes" = "30 Minuten";
 
+/* SimpleLinearRegressionCalibration: description */
+"A simple linear regression model is used for calibration" = "Ein einfaches lineares Regressionsmodell wird für die Kalibration benutzt ";
+
 /* about.title */
 "About" = "Über diese App";
 
@@ -35,11 +38,14 @@
 /* blueReader: sensor ok */
 "blueReader ok" = "blueReader ok";
 
-/* alarmalert.title */
-"Cancel" = "Abbrechen";
+/* calibration.title */
+"Calibration" = "Kalibration";
 
 /* blueReader.cancel */
 "cancel" = "Abbrechen";
+
+/* alarmalert.title */
+"Cancel" = "Abbrechen";
 
 /* unitalert.change */
 "Change the Unit" = "Die Anzeigeeinheit ändern";
@@ -201,15 +207,24 @@
    nightscout: reloading */
 "reloading" = "wird geladen";
 
+/* CalibrationMethod.title */
+"Remove calibration method" = "Kalibrationsmethode entfernen";
+
 /* blueReader.remove
    blueReader.title */
 "Remove Device" = "Gerät entfernen";
+
+/* CalibrationMethod.remove */
+"Remove method" = "Methode entfernen";
 
 /* last reading second */
 "second" = "Sekunde";
 
 /* last reading seconds */
 "seconds" = "Sekunden";
+
+/* calibration.description */
+"Select and configure calibration method" = "Kalibrationsmethode auswählen und konfigurieren";
 
 /* device.description */
 "Select and configure used Device" = "Gerät auswählen und einrichten";
@@ -223,6 +238,9 @@
 /* blueReader.shutdown
    blueReader.titleShutdown */
 "Shutdown Device" = "Gerät Ausschalten";
+
+/* SimpleLinearRegressionCalibration: headline */
+"Simple Linear Regression Calibration" = "Einfach lineare Regressions-Kalibration";
 
 /* notification.1 */
 "Snooze for 1h" = "1 Stunde schlummern";

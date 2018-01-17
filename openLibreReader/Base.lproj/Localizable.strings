@@ -11,6 +11,9 @@
 /* alarmalert.title */
 "30 minutes" = "30 minutes";
 
+/* SimpleLinearRegressionCalibration: description */
+"A simple linear regression model is used for calibration" = "A simple linear regression model is used for calibration";
+
 /* about.title */
 "About" = "Informationen";
 
@@ -35,11 +38,14 @@
 /* blueReader: sensor ok */
 "blueReader ok" = "blueReader ok";
 
-/* alarmalert.title */
-"Cancel" = "Cancel";
+/* calibration.title */
+"Calibration" = "Calibration";
 
 /* blueReader.cancel */
 "cancel" = "cancel";
+
+/* alarmalert.title */
+"Cancel" = "Cancel";
 
 /* unitalert.change */
 "Change the Unit" = "Change the Unit";
@@ -201,15 +207,24 @@
    nightscout: reloading */
 "reloading" = "reloading";
 
+/* CalibrationMethod.title */
+"Remove calibration method" = "Remove calibration method";
+
 /* blueReader.remove
    blueReader.title */
 "Remove Device" = "Remove Device";
+
+/* CalibrationMethod.remove */
+"Remove method" = "Remove method";
 
 /* last reading second */
 "second" = "second";
 
 /* last reading seconds */
 "seconds" = "seconds";
+
+/* calibration.description */
+"Select and configure calibration method" = "Select and configure calibration method";
 
 /* device.description */
 "Select and configure used Device" = "Select and configure used Device";
@@ -223,6 +238,9 @@
 /* blueReader.shutdown
    blueReader.titleShutdown */
 "Shutdown Device" = "Shutdown Device";
+
+/* SimpleLinearRegressionCalibration: headline */
+"Simple Linear Regression Calibration" = "Simple Linear Regression Calibration";
 
 /* notification.1 */
 "Snooze for 1h" = "Snooze for 1h";

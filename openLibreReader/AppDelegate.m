@@ -11,6 +11,7 @@
 
 #import "Calibration.h"
 #import "TestCalibration.h"
+#import "SimpleLinearRegressionCalibration.h"
 
 #import "blueReader.h"
 #import "nightscout.h"
@@ -24,11 +25,15 @@
 #import "bgValue.h"
 #import "Storage.h"
 #import "HomeViewController.h"
+#import <WatchConnectivity/WatchConnectivity.h>
+#import "openLibreReader-Swift.h"
 
 @interface AppDelegate ()
 @property (strong) BluetoothService* bluetoothService;
 @property (strong) Alarms* alarms;
 @property (nonatomic,strong) MMWormhole* wormhole;
+@property (nonatomic,strong) ConnectivityHandler* connectivityHandler;
+
 @property (nonatomic, strong)   NSMutableDictionary* wormholeData;
 @end
 
@@ -43,6 +48,7 @@
     _alarms = [[Alarms alloc] init];
     registerCalibration([Calibration class]);
     registerCalibration([TestCalibration class]);
+    registerCalibration([SimpleLinearRegressionCalibration class]);
 
     registerDevice([blueReader class]);
     registerDevice([nightscout class]);
@@ -56,6 +62,10 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(recieved:) name:kCalibrationBGValue object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(deviceStatus:) name:kDeviceStatusNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(recievedBattery:) name:kDeviceBatteryValueNotification object:nil];
+
+    if ([WCSession isSupported]) {
+        _connectivityHandler = [ConnectivityHandler new];
+    }
 
     return YES;
 }
@@ -143,7 +153,9 @@
         [self.wormhole passMessageObject:archive
                               identifier:@"currentData"];
     }
+    [self.connectivityHandler sendDictionaryWithDict:_wormholeData ];
 }
+
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
