@@ -119,6 +119,9 @@
 /* NoCalibration: description */
 "Does not apply any Calibration to the recieved Value." = "Does not apply any Calibration to the recieved Value.";
 
+/* nightscout: connect nor url */
+"error, no data" = "error, no data";
+
 /* nightscout: failed */
 "failed to connect" = "failed to connect";
 

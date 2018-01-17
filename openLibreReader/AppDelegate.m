@@ -91,7 +91,10 @@
 }
 -(void) makeWormholeData {
     NSData* archive = [NSKeyedArchiver archivedDataWithRootObject:_wormholeData];
-    [_wormholeData setObject:[[Storage instance] getSelectedDisplayUnit] forKey:@"unit"];
+
+    if([[Storage instance] getSelectedDisplayUnit]) {
+        [_wormholeData setObject:[[Storage instance] getSelectedDisplayUnit] forKey:@"unit"];
+    }
     [_wormholeData setObject:[NSNumber numberWithInt:[[Configuration instance] lowerBGLimit]] forKey:@"lowerBGLimit"];
     [_wormholeData setObject:[NSNumber numberWithInt:[[Configuration instance] upperBGLimit]] forKey:@"upperBGLimit"];
     [_wormholeData setObject:[NSNumber numberWithInt:[[Configuration instance] lowBGLimit]] forKey:@"lowBGLimit"];
