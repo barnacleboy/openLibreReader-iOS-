@@ -191,6 +191,10 @@
 
     double min = low-30;
     double max = high+50;
+    if([[_unit lowercaseString] isEqualToString:@"mmol"]) {
+        min = low - 1.6652243973;
+        max = high + 2.7753739955;
+    }
     double minTime = 0;
     double maxTime = 0;
 

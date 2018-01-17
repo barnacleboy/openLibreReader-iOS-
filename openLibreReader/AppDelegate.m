@@ -95,10 +95,11 @@
     if([[Storage instance] getSelectedDisplayUnit]) {
         [_wormholeData setObject:[[Storage instance] getSelectedDisplayUnit] forKey:@"unit"];
     }
-    [_wormholeData setObject:[NSNumber numberWithInt:[[Configuration instance] lowerBGLimit]] forKey:@"lowerBGLimit"];
-    [_wormholeData setObject:[NSNumber numberWithInt:[[Configuration instance] upperBGLimit]] forKey:@"upperBGLimit"];
-    [_wormholeData setObject:[NSNumber numberWithInt:[[Configuration instance] lowBGLimit]] forKey:@"lowBGLimit"];
-    [_wormholeData setObject:[NSNumber numberWithInt:[[Configuration instance] highBGLimit]] forKey:@"highBGLimit"];
+    Configuration* c = [Configuration instance];
+    [_wormholeData setObject:[NSNumber numberWithInt:[c valueInDisplayUnit:[[Configuration instance] lowerBGLimit]]] forKey:@"lowerBGLimit"];
+    [_wormholeData setObject:[NSNumber numberWithInt:[c valueInDisplayUnit:[[Configuration instance] upperBGLimit]]] forKey:@"upperBGLimit"];
+    [_wormholeData setObject:[NSNumber numberWithInt:[c valueInDisplayUnit:[[Configuration instance] lowBGLimit]]] forKey:@"lowBGLimit"];
+    [_wormholeData setObject:[NSNumber numberWithInt:[c valueInDisplayUnit:[[Configuration instance] highBGLimit]]] forKey:@"highBGLimit"];
 
     [self.wormhole passMessageObject:archive
                           identifier:@"currentData"];
@@ -146,7 +147,7 @@
 
     NSMutableArray* valueArray = [NSMutableArray new];
     for(bgValue* value in [[Storage instance] bgValuesFrom:[[NSDate date]timeIntervalSince1970]-(8*60*60) to:[[NSDate date]timeIntervalSince1970]]) {
-        [valueArray addObject:@{@"value":[NSNumber numberWithDouble:value.value],
+        [valueArray addObject:@{@"value":[NSNumber numberWithDouble:[c valueInDisplayUnit:value.value]],
                                 @"timestamp":[NSNumber numberWithDouble:value.timestamp]
                                 }];
     }
