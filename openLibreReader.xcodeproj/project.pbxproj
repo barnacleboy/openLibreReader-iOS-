@@ -66,7 +66,6 @@
 		6CC754B31F5F1606008194E1 /* Configurable.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CC754B21F5F1606008194E1 /* Configurable.m */; };
 		6CF394CF1F7A82B8006EFECA /* nightscout.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CF394CD1F7A82B8006EFECA /* nightscout.m */; };
 		961151501FEE7315006507F6 /* WatchScatterPlotImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9611514F1FEE7315006507F6 /* WatchScatterPlotImage.swift */; };
-		963689461FA8B12900D51B4C /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 963689471FA8B12900D51B4C /* Starscream.framework */; };
 		96640DE81FED31920035CCC4 /* ConnectivityHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96640DE71FED31920035CCC4 /* ConnectivityHandler.swift */; };
 		967D19721FE5484A0088DCF5 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 967D19701FE5484A0088DCF5 /* Interface.storyboard */; };
 		967D19741FE5484A0088DCF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 967D19731FE5484A0088DCF5 /* Assets.xcassets */; };
@@ -77,8 +76,6 @@
 		967D19861FE5484B0088DCF5 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967D19851FE5484B0088DCF5 /* ComplicationController.swift */; };
 		967D19881FE5484B0088DCF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 967D19871FE5484B0088DCF5 /* Assets.xcassets */; };
 		967D198D1FE5484B0088DCF5 /* openLibreWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 967D196E1FE548490088DCF5 /* openLibreWatch.app */; };
-		967D199A1FE69CD10088DCF5 /* demo.m in Sources */ = {isa = PBXBuildFile; fileRef = 967D19991FE69CD10088DCF5 /* demo.m */; };
-		967D199D1FE6A0680088DCF5 /* demoDeviceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 967D199C1FE6A0680088DCF5 /* demoDeviceViewController.m */; };
 		96A9E8121FF7B73C00FB60CA /* SimpleLinearRegressionCalibration.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A9E8111FF7B73B00FB60CA /* SimpleLinearRegressionCalibration.m */; };
 		96A9E81B1FF902D600FB60CA /* SimpleLinearRegressionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A9E81A1FF902D600FB60CA /* SimpleLinearRegressionViewController.m */; };
 		D3D66823AC638B036C44F61B /* Pods_openLibreReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C7EE85A1F9B708F00D4A288 /* Pods_openLibreReader.framework */; };
@@ -324,7 +321,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				963689461FA8B12900D51B4C /* Starscream.framework in Frameworks */,
 				6C7EE8601F9B926300D4A288 /* NotificationCenter.framework in Frameworks */,
 				6C7EE8581F9B706200D4A288 /* Charts.framework in Frameworks */,
 				6C7EE8561F9B706200D4A288 /* MMWormhole.framework in Frameworks */,
@@ -705,7 +701,7 @@
 				TargetAttributes = {
 					6C6CAB791F0FB6F000810568 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 23935DS764;
+						DevelopmentTeam = P7MBNPZ547;
 						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -716,7 +712,7 @@
 					};
 					6C7EE8421F9B704700D4A288 = {
 						CreatedOnToolsVersion = 9.0;
-						DevelopmentTeam = 23935DS764;
+						DevelopmentTeam = P7MBNPZ547;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
@@ -726,7 +722,7 @@
 					};
 					967D196D1FE548490088DCF5 = {
 						CreatedOnToolsVersion = 9.0.1;
-						DevelopmentTeam = 23935DS764;
+						DevelopmentTeam = P7MBNPZ547;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
@@ -736,7 +732,7 @@
 					};
 					967D19791FE5484A0088DCF5 = {
 						CreatedOnToolsVersion = 9.0.1;
-						DevelopmentTeam = 23935DS764;
+						DevelopmentTeam = P7MBNPZ547;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
@@ -959,14 +955,14 @@
 				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
 				"${BUILT_PRODUCTS_DIR}/MMWormhole/MMWormhole.framework",
 				"${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework",
-				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+				"${BUILT_PRODUCTS_DIR}/StarscreamSocketIO/StarscreamSocketIO.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MMWormhole.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketIO.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/StarscreamSocketIO.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -980,7 +976,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				967D199D1FE6A0680088DCF5 /* demoDeviceViewController.m in Sources */,
 				6C6C81091F912C9800DE3B8C /* ConfigurationListTableViewCell.m in Sources */,
 				6C4184D01F9CCA4C00B156F7 /* limitterDeviceViewController.m in Sources */,
 				6C6C80F41F86841A00DE3B8C /* Alarms.m in Sources */,
@@ -999,7 +994,6 @@
 				6C6CAB821F0FB6F000810568 /* AppDelegate.m in Sources */,
 				6C64BFF11F6F16E900879A51 /* mgdl.m in Sources */,
 				6C6CABCF1F12B0B200810568 /* batteryValue.m in Sources */,
-				967D199A1FE69CD10088DCF5 /* demo.m in Sources */,
 				6C4184CD1F9BCFA400B156F7 /* limitter.m in Sources */,
 				6C56D4F41F969F43000BC92A /* NSUploadViewController.m in Sources */,
 				6C6CABC11F11B69D00810568 /* Calibration.m in Sources */,
@@ -1236,11 +1230,11 @@
 				CODE_SIGN_ENTITLEMENTS = openLibreReader/openLibreReader.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 23935DS764;
+				DEVELOPMENT_TEAM = P7MBNPZ547;
 				INFOPLIST_FILE = openLibreReader/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = de.gerrietreents.openLibreReader;
+				PRODUCT_BUNDLE_IDENTIFIER = de.bluetoolz.openLibreReader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "openLibreReader/openLibreReader-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1258,11 +1252,11 @@
 				CODE_SIGN_ENTITLEMENTS = openLibreReader/openLibreReader.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 23935DS764;
+				DEVELOPMENT_TEAM = P7MBNPZ547;
 				INFOPLIST_FILE = openLibreReader/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = de.gerrietreents.openLibreReader;
+				PRODUCT_BUNDLE_IDENTIFIER = de.bluetoolz.openLibreReader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "openLibreReader/openLibreReader-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
@@ -1279,12 +1273,12 @@
 				CODE_SIGN_ENTITLEMENTS = openLibreReaderWidget/openLibreReaderWidget.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 23935DS764;
+				DEVELOPMENT_TEAM = P7MBNPZ547;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = openLibreReaderWidget/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = de.gerrietreents.openLibreReader.openLibreReaderWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = de.bluetoolz.openLibreReader.openLibreReaderWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1301,12 +1295,12 @@
 				CODE_SIGN_ENTITLEMENTS = openLibreReaderWidget/openLibreReaderWidget.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 23935DS764;
+				DEVELOPMENT_TEAM = P7MBNPZ547;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = openLibreReaderWidget/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = de.gerrietreents.openLibreReader.openLibreReaderWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = de.bluetoolz.openLibreReader.openLibreReaderWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1324,11 +1318,11 @@
 				CODE_SIGN_ENTITLEMENTS = openLibreWatch/openLibreWatch.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 23935DS764;
+				DEVELOPMENT_TEAM = P7MBNPZ547;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				IBSC_MODULE = openLibreWatch_Extension;
 				INFOPLIST_FILE = openLibreWatch/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = de.gerrietreents.openLibreReader.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = de.bluetoolz.openLibreReader.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -1351,11 +1345,11 @@
 				CODE_SIGN_ENTITLEMENTS = openLibreWatch/openLibreWatch.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 23935DS764;
+				DEVELOPMENT_TEAM = P7MBNPZ547;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				IBSC_MODULE = openLibreWatch_Extension;
 				INFOPLIST_FILE = openLibreWatch/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = de.gerrietreents.openLibreReader.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = de.bluetoolz.openLibreReader.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -1375,11 +1369,11 @@
 				CODE_SIGN_ENTITLEMENTS = "openLibreWatch Extension/openLibreWatch Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 23935DS764;
+				DEVELOPMENT_TEAM = P7MBNPZ547;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "openLibreWatch Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = de.gerrietreents.openLibreReader.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = de.bluetoolz.openLibreReader.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -1401,11 +1395,11 @@
 				CODE_SIGN_ENTITLEMENTS = "openLibreWatch Extension/openLibreWatch Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 23935DS764;
+				DEVELOPMENT_TEAM = P7MBNPZ547;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "openLibreWatch Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = de.gerrietreents.openLibreReader.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = de.bluetoolz.openLibreReader.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
