@@ -273,7 +273,7 @@
 "use this if your values are measured in mg/dl, typically between 50 and 300" = "Diese Option für Werte in mg/dl benutzen, typischerweise liegen diese zwischen 50 und 300";
 
 /* Description for mmol unit */
-"use this if your values are measured in mmol, typically between 3.3 and 9.5" = "Diese Option für Werte in mmol benutzen, typischerweise liegen diese zwischen 3.3 und 9.5";
+"use this if your values are measured in mmol, typically between 3.3 and 9.5" = "Diese Option für Werte in mmol/l benutzen, typischerweise liegen diese zwischen 3.3 und 9.5";
 
 /* nightscout: Description */
 "Values are recieved from a Nightscout instance.\nAlarms might stop working, if app is not actively showing." = "Werte werden von einer Nightscout Instanz empfangen.\nWenn die App nicht angezeigt wird, können keine Daten empfangen werden und Alarme ausgelöst werden!";
