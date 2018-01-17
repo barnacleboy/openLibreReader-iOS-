@@ -61,7 +61,10 @@
 }
 
 +(UIViewController*) configurationViewController {
-    return nil;
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+
+    UIViewController* vc = [storyboard instantiateViewControllerWithIdentifier:@"CalibrationViewController"];
+    return vc;
 }
 
 -(void)unregister {
@@ -69,9 +72,6 @@
 }
 
 -(NSString*) settingsSequeIdentifier {
-    @throw [NSException exceptionWithName:@"Instantiationexception"
-                                   reason:@"not possible"
-                                 userInfo:nil];
-    return nil;
+    return @"CalibrationSettings";
 }
 @end

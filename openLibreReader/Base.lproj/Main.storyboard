@@ -602,6 +602,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WEP-s7-Zpe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationItem title="Linear Regression Calibration" id="Hqr-nZ-tyf"/>
             </objects>
             <point key="canvasLocation" x="-249.375" y="1116.5492957746478"/>
         </scene>
@@ -680,6 +681,7 @@
                         <segue destination="25V-g3-o35" kind="show" identifier="about" id="ots-qp-lVs"/>
                         <segue destination="Udd-kg-u9c" kind="show" identifier="limitterDeviceSettings" id="BMS-cy-mKK"/>
                         <segue destination="GVp-dO-a6l" kind="show" identifier="SimpleLinearRegressionCalibrationSettings" id="X92-Dg-Xuf"/>
+                        <segue destination="JEf-xN-GKP" kind="show" identifier="CalibrationSettings" id="gnG-pr-Dud"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="brz-oA-ZbW" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1205,6 +1207,43 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QFK-ay-LwZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-58.125" y="1918.3098591549297"/>
+        </scene>
+        <!--Calibration Settings-->
+        <scene sceneID="0QN-eC-1B5">
+            <objects>
+                <viewController storyboardIdentifier="CalibrationViewController" title="Calibration Settings" id="JEf-xN-GKP" customClass="CalibrationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0XN-Od-422"/>
+                        <viewControllerLayoutGuide type="bottom" id="Qet-1Q-vwH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="awy-r1-Ow6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jbj-1K-UF7">
+                                <rect key="frame" x="16" y="455" width="280" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" red="0.90601851850000004" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <state key="normal" title="remove method">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetConfiguration:" destination="JEf-xN-GKP" eventType="touchUpInside" id="9Xf-I4-wNg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Calibration" id="RNw-ay-mgf"/>
+                    <connections>
+                        <outlet property="forget" destination="jbj-1K-UF7" id="LAj-hy-9yH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fBE-ZM-cG9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationItem title="Calibration" id="peE-Ql-xWO"/>
+            </objects>
+            <point key="canvasLocation" x="-999" y="1553"/>
         </scene>
     </scenes>
     <resources>

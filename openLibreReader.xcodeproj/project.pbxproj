@@ -60,6 +60,7 @@
 		6C7EE8581F9B706200D4A288 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CF394C51F794F06006EFECA /* Charts.framework */; };
 		6C7EE8601F9B926300D4A288 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C7EE8441F9B704800D4A288 /* NotificationCenter.framework */; };
 		6C7EE8621F9BB21E00D4A288 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C7EE8611F9BB21E00D4A288 /* Media.xcassets */; };
+		6C8ADC3F200F8E4200147072 /* CalibrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C8ADC3E200F8E4200147072 /* CalibrationViewController.m */; };
 		6CAEE6811F617AD1001EBDEF /* BluetoothStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CAEE6801F617AD1001EBDEF /* BluetoothStatus.m */; };
 		6CC754A91F5DAD48008194E1 /* ConfigurationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CC754A81F5DAD48008194E1 /* ConfigurationViewController.m */; };
 		6CC754AC1F5DB9D5008194E1 /* ConfigurationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CC754AB1F5DB9D5008194E1 /* ConfigurationTableViewCell.m */; };
@@ -252,6 +253,8 @@
 		6C7EE85E1F9B751C00D4A288 /* openLibreReaderWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = openLibreReaderWidget.entitlements; sourceTree = "<group>"; };
 		6C7EE85F1F9B753300D4A288 /* openLibreReader.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = openLibreReader.entitlements; sourceTree = "<group>"; };
 		6C7EE8611F9BB21E00D4A288 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		6C8ADC3B200F8E4200147072 /* CalibrationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalibrationViewController.h; sourceTree = "<group>"; };
+		6C8ADC3E200F8E4200147072 /* CalibrationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalibrationViewController.m; sourceTree = "<group>"; };
 		6CAEE67F1F617AD1001EBDEF /* BluetoothStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BluetoothStatus.h; sourceTree = "<group>"; };
 		6CAEE6801F617AD1001EBDEF /* BluetoothStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BluetoothStatus.m; sourceTree = "<group>"; };
 		6CB164684B04AF4757626EC4 /* Pods_openLibreReaderWidget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_openLibreReaderWidget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -362,6 +365,8 @@
 				96A9E8111FF7B73B00FB60CA /* SimpleLinearRegressionCalibration.m */,
 				96A9E8191FF902BC00FB60CA /* SimpleLinearRegressionViewController.h */,
 				96A9E81A1FF902D600FB60CA /* SimpleLinearRegressionViewController.m */,
+				6C8ADC3B200F8E4200147072 /* CalibrationViewController.h */,
+				6C8ADC3E200F8E4200147072 /* CalibrationViewController.m */,
 			);
 			name = Calibration;
 			sourceTree = "<group>";
@@ -991,6 +996,7 @@
 				6C6C81151F9684B900DE3B8C /* AlarmsViewController.m in Sources */,
 				6C59E7551F5DA5B5004CC390 /* BluetoothDevice.m in Sources */,
 				6CC754A91F5DAD48008194E1 /* ConfigurationViewController.m in Sources */,
+				6C8ADC3F200F8E4200147072 /* CalibrationViewController.m in Sources */,
 				6C6CAB821F0FB6F000810568 /* AppDelegate.m in Sources */,
 				6C64BFF11F6F16E900879A51 /* mgdl.m in Sources */,
 				6C6CABCF1F12B0B200810568 /* batteryValue.m in Sources */,
