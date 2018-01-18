@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_openLibreWatchVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_openLibreWatchVersionString[];
+FOUNDATION_EXPORT double Pods_openLibreWatch_ExtensionVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_openLibreWatch_ExtensionVersionString[];
 

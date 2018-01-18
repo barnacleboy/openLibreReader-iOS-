@@ -1,5 +1,5 @@
 framework module MMWormhole {
-  umbrella header "MMWormhole-umbrella.h"
+  umbrella header "MMWormhole-watchOS-umbrella.h"
 
   export *
   module * { export * }

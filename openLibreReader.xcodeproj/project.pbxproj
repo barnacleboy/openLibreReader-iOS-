@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		050CEE1E41BA57470A43ABC2 /* Pods_openLibreWatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C8AFD1520101AFB00D4E639 /* Pods_openLibreWatch.framework */; };
 		07B5E24F254AA28FF2335971 /* Pods_openLibreReaderWidget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CB164684B04AF4757626EC4 /* Pods_openLibreReaderWidget.framework */; };
-		1F90B3E9D3D8BB2068303CD2 /* Pods_openLibreWatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B3773431FC39D9C70CDA31D /* Pods_openLibreWatch.framework */; };
-		5CC91AA9BCBF6B83F9EA9733 /* Pods_openLibreReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69010E584FBC43C6715AC1E5 /* Pods_openLibreReader.framework */; };
+		3463F9DFF3749CD9616B7698 /* Pods_openLibreReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C7EE85A1F9B708F00D4A288 /* Pods_openLibreReader.framework */; };
+		4E37C71AB854F2CE41DD6597 /* Pods_openLibreWatch_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 372C291246DC51ED3DE25DBC /* Pods_openLibreWatch_Extension.framework */; };
 		6C0D172A1F7196E500050A73 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6C0D172C1F7196E500050A73 /* Localizable.strings */; };
 		6C4184CD1F9BCFA400B156F7 /* limitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C4184CB1F9BCFA300B156F7 /* limitter.m */; };
 		6C4184D01F9CCA4C00B156F7 /* limitterDeviceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C4184CF1F9CCA4C00B156F7 /* limitterDeviceViewController.m */; };
@@ -55,9 +56,6 @@
 		6C7EE8331F97E4FE00D4A288 /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = 6C7EE8351F97E4FE00D4A288 /* about.html */; };
 		6C7EE8491F9B704800D4A288 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C7EE8481F9B704800D4A288 /* TodayViewController.m */; };
 		6C7EE84C1F9B704800D4A288 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C7EE84A1F9B704800D4A288 /* MainInterface.storyboard */; };
-		6C7EE8501F9B704800D4A288 /* openLibreReaderWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6C7EE8431F9B704700D4A288 /* openLibreReaderWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		6C7EE8561F9B706200D4A288 /* MMWormhole.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C7EE8571F9B706200D4A288 /* MMWormhole.framework */; };
-		6C7EE8581F9B706200D4A288 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CF394C51F794F06006EFECA /* Charts.framework */; };
 		6C7EE8601F9B926300D4A288 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C7EE8441F9B704800D4A288 /* NotificationCenter.framework */; };
 		6C7EE8621F9BB21E00D4A288 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C7EE8611F9BB21E00D4A288 /* Media.xcassets */; };
 		6C8ADC3F200F8E4200147072 /* CalibrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C8ADC3E200F8E4200147072 /* CalibrationViewController.m */; };
@@ -79,31 +77,9 @@
 		967D198D1FE5484B0088DCF5 /* openLibreWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 967D196E1FE548490088DCF5 /* openLibreWatch.app */; };
 		96A9E8121FF7B73C00FB60CA /* SimpleLinearRegressionCalibration.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A9E8111FF7B73B00FB60CA /* SimpleLinearRegressionCalibration.m */; };
 		96A9E81B1FF902D600FB60CA /* SimpleLinearRegressionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A9E81A1FF902D600FB60CA /* SimpleLinearRegressionViewController.m */; };
-		D3D66823AC638B036C44F61B /* Pods_openLibreReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C7EE85A1F9B708F00D4A288 /* Pods_openLibreReader.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		6C7EE84E1F9B704800D4A288 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6C6CAB721F0FB6F000810568 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6C7EE8421F9B704700D4A288;
-			remoteInfo = openLibreReaderWidget;
-		};
-		6CF394C41F794F06006EFECA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6CF394BF1F794F05006EFECA /* Charts.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 65AD9E95D9ED4DC0BD73A743;
-			remoteInfo = Charts;
-		};
-		6CF394C61F794F06006EFECA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6CF394BF1F794F05006EFECA /* Charts.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 1CBBC58C6CE1EBEE9852CE41;
-			remoteInfo = ChartsTests;
-		};
 		967D197C1FE5484A0088DCF5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6C6CAB721F0FB6F000810568 /* Project object */;
@@ -121,17 +97,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		6C7EE8551F9B704800D4A288 /* Embed App Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-				6C7EE8501F9B704800D4A288 /* openLibreReaderWidget.appex in Embed App Extensions */,
-			);
-			name = "Embed App Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		967D19931FE5484B0088DCF5 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -160,9 +125,12 @@
 		16D4EF9A39A3DF4758740879 /* Pods-openLibreWatch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-openLibreWatch.release.xcconfig"; path = "Pods/Target Support Files/Pods-openLibreWatch/Pods-openLibreWatch.release.xcconfig"; sourceTree = "<group>"; };
 		28FD1ABECB81DF9FF6A393D5 /* Pods-openLibreReaderWidget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-openLibreReaderWidget.release.xcconfig"; path = "Pods/Target Support Files/Pods-openLibreReaderWidget/Pods-openLibreReaderWidget.release.xcconfig"; sourceTree = "<group>"; };
 		2B3773431FC39D9C70CDA31D /* Pods_openLibreWatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_openLibreWatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		341E9EF1F41FE67628D445CE /* Pods-openLibreWatch Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-openLibreWatch Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-openLibreWatch Extension/Pods-openLibreWatch Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		372C291246DC51ED3DE25DBC /* Pods_openLibreWatch_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_openLibreWatch_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		46557CDE10947FE710BCEEB5 /* Pods-openLibreReader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-openLibreReader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-openLibreReader/Pods-openLibreReader.debug.xcconfig"; sourceTree = "<group>"; };
 		4A6B634884485047D4A30DA0 /* Pods-openLibreReaderWidget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-openLibreReaderWidget.debug.xcconfig"; path = "Pods/Target Support Files/Pods-openLibreReaderWidget/Pods-openLibreReaderWidget.debug.xcconfig"; sourceTree = "<group>"; };
 		5014BCFD480F87CE7EB4C497 /* Pods-openLibreReader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-openLibreReader.release.xcconfig"; path = "Pods/Target Support Files/Pods-openLibreReader/Pods-openLibreReader.release.xcconfig"; sourceTree = "<group>"; };
+		582B7C6AE99DE414FD7FFAF0 /* Pods-openLibreWatch Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-openLibreWatch Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-openLibreWatch Extension/Pods-openLibreWatch Extension.release.xcconfig"; sourceTree = "<group>"; };
 		69010E584FBC43C6715AC1E5 /* Pods_openLibreReader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_openLibreReader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C0D172B1F7196E500050A73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6C0D172F1F71A03500050A73 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -255,6 +223,11 @@
 		6C7EE8611F9BB21E00D4A288 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		6C8ADC3B200F8E4200147072 /* CalibrationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalibrationViewController.h; sourceTree = "<group>"; };
 		6C8ADC3E200F8E4200147072 /* CalibrationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalibrationViewController.m; sourceTree = "<group>"; };
+		6C8AFCFF201015B800D4E639 /* Charts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Charts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C8AFD00201015B800D4E639 /* MMWormhole.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MMWormhole.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C8AFD022010174500D4E639 /* Charts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Charts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C8AFD132010198F00D4E639 /* Pods_openLibreWatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_openLibreWatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C8AFD1520101AFB00D4E639 /* Pods_openLibreWatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_openLibreWatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CAEE67F1F617AD1001EBDEF /* BluetoothStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BluetoothStatus.h; sourceTree = "<group>"; };
 		6CAEE6801F617AD1001EBDEF /* BluetoothStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BluetoothStatus.m; sourceTree = "<group>"; };
 		6CB164684B04AF4757626EC4 /* Pods_openLibreReaderWidget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_openLibreReaderWidget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -266,7 +239,6 @@
 		6CC754AB1F5DB9D5008194E1 /* ConfigurationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigurationTableViewCell.m; sourceTree = "<group>"; };
 		6CC754B11F5F1606008194E1 /* Configurable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Configurable.h; sourceTree = "<group>"; };
 		6CC754B21F5F1606008194E1 /* Configurable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Configurable.m; sourceTree = "<group>"; };
-		6CF394BF1F794F05006EFECA /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = ../Charts/Charts.xcodeproj; sourceTree = "<group>"; };
 		6CF394CD1F7A82B8006EFECA /* nightscout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = nightscout.m; sourceTree = "<group>"; };
 		6CF394CE1F7A82B8006EFECA /* nightscout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = nightscout.h; sourceTree = "<group>"; };
 		9611514F1FEE7315006507F6 /* WatchScatterPlotImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchScatterPlotImage.swift; sourceTree = "<group>"; };
@@ -302,7 +274,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F90B3E9D3D8BB2068303CD2 /* Pods_openLibreWatch.framework in Frameworks */,
+				050CEE1E41BA57470A43ABC2 /* Pods_openLibreWatch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,8 +287,7 @@
 				6C6C81021F8BE5D100DE3B8C /* UserNotifications.framework in Frameworks */,
 				6C6CABBB1F11A6BF00810568 /* libsqlite3.tbd in Frameworks */,
 				6C6CABB31F0FDCE400810568 /* CoreBluetooth.framework in Frameworks */,
-				5CC91AA9BCBF6B83F9EA9733 /* Pods_openLibreReader.framework in Frameworks */,
-				D3D66823AC638B036C44F61B /* Pods_openLibreReader.framework in Frameworks */,
+				3463F9DFF3749CD9616B7698 /* Pods_openLibreReader.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,8 +296,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6C7EE8601F9B926300D4A288 /* NotificationCenter.framework in Frameworks */,
-				6C7EE8581F9B706200D4A288 /* Charts.framework in Frameworks */,
-				6C7EE8561F9B706200D4A288 /* MMWormhole.framework in Frameworks */,
 				07B5E24F254AA28FF2335971 /* Pods_openLibreReaderWidget.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -335,6 +304,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E37C71AB854F2CE41DD6597 /* Pods_openLibreWatch_Extension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +320,8 @@
 				28FD1ABECB81DF9FF6A393D5 /* Pods-openLibreReaderWidget.release.xcconfig */,
 				FDA85F3FBA8B0F9E1527DEA4 /* Pods-openLibreWatch.debug.xcconfig */,
 				16D4EF9A39A3DF4758740879 /* Pods-openLibreWatch.release.xcconfig */,
+				341E9EF1F41FE67628D445CE /* Pods-openLibreWatch Extension.debug.xcconfig */,
+				582B7C6AE99DE414FD7FFAF0 /* Pods-openLibreWatch Extension.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -505,6 +477,11 @@
 		6C6CABB11F0FDCE400810568 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6C8AFD1520101AFB00D4E639 /* Pods_openLibreWatch.framework */,
+				6C8AFD132010198F00D4E639 /* Pods_openLibreWatch.framework */,
+				6C8AFD022010174500D4E639 /* Charts.framework */,
+				6C8AFCFF201015B800D4E639 /* Charts.framework */,
+				6C8AFD00201015B800D4E639 /* MMWormhole.framework */,
 				963689471FA8B12900D51B4C /* Starscream.framework */,
 				6C7EE85A1F9B708F00D4A288 /* Pods_openLibreReader.framework */,
 				6C7EE8571F9B706200D4A288 /* MMWormhole.framework */,
@@ -512,13 +489,13 @@
 				6C6C810A1F939B0A00DE3B8C /* AVKit.framework */,
 				6C6C81001F8BE5D000DE3B8C /* UserNotifications.framework */,
 				6C6C80FF1F8BE5D000DE3B8C /* UserNotificationsUI.framework */,
-				6CF394BF1F794F05006EFECA /* Charts.xcodeproj */,
 				6C6CABBA1F11A6BF00810568 /* libsqlite3.tbd */,
 				6C6CABB21F0FDCE400810568 /* CoreBluetooth.framework */,
 				69010E584FBC43C6715AC1E5 /* Pods_openLibreReader.framework */,
 				6C7EE8441F9B704800D4A288 /* NotificationCenter.framework */,
 				6CB164684B04AF4757626EC4 /* Pods_openLibreReaderWidget.framework */,
 				2B3773431FC39D9C70CDA31D /* Pods_openLibreWatch.framework */,
+				372C291246DC51ED3DE25DBC /* Pods_openLibreWatch_Extension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -573,15 +550,6 @@
 			name = "Recovered References";
 			sourceTree = "<group>";
 		};
-		6CF394C01F794F05006EFECA /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				6CF394C51F794F06006EFECA /* Charts.framework */,
-				6CF394C71F794F06006EFECA /* ChartsTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		967D196F1FE548490088DCF5 /* openLibreWatch */ = {
 			isa = PBXGroup;
 			children = (
@@ -624,13 +592,11 @@
 				D1C5DDEF095EDA2FE1FE1E0F /* [CP] Embed Pods Frameworks */,
 				75D3D3621FBA879E7ECD65AE /* [CP] Copy Pods Resources */,
 				6C6C81031F91162400DE3B8C /* Run Script */,
-				6C7EE8551F9B704800D4A288 /* Embed App Extensions */,
 				967D19951FE5484B0088DCF5 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				6C7EE84F1F9B704800D4A288 /* PBXTargetDependency */,
 				967D198C1FE5484B0088DCF5 /* PBXTargetDependency */,
 			);
 			name = openLibreReader;
@@ -681,9 +647,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 967D19921FE5484B0088DCF5 /* Build configuration list for PBXNativeTarget "openLibreWatch Extension" */;
 			buildPhases = (
+				A4113A0624717726FF410D4C /* [CP] Check Pods Manifest.lock */,
 				967D19761FE5484A0088DCF5 /* Sources */,
 				967D19771FE5484A0088DCF5 /* Frameworks */,
 				967D19781FE5484A0088DCF5 /* Resources */,
+				4F7C637F720531F2DAAC308A /* [CP] Embed Pods Frameworks */,
+				BC7D64F85F6452EF446416EF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -759,12 +728,6 @@
 			mainGroup = 6C6CAB711F0FB6F000810568;
 			productRefGroup = 6C6CAB7B1F0FB6F000810568 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 6CF394C01F794F05006EFECA /* Products */;
-					ProjectRef = 6CF394BF1F794F05006EFECA /* Charts.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				6C6CAB791F0FB6F000810568 /* openLibreReader */,
@@ -774,23 +737,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		6CF394C51F794F06006EFECA /* Charts.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Charts.framework;
-			remoteRef = 6CF394C41F794F06006EFECA /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		6CF394C71F794F06006EFECA /* ChartsTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = ChartsTests.xctest;
-			remoteRef = 6CF394C61F794F06006EFECA /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		6C6CAB781F0FB6F000810568 /* Resources */ = {
@@ -870,6 +816,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		4F7C637F720531F2DAAC308A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-openLibreWatch Extension/Pods-openLibreWatch Extension-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MMWormhole-watchOS/MMWormhole.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MMWormhole.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-openLibreWatch Extension/Pods-openLibreWatch Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		6371FDDA41B0782C2FDB709B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -932,6 +896,24 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-openLibreReaderWidget/Pods-openLibreReaderWidget-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		A4113A0624717726FF410D4C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-openLibreWatch Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		B4FA531BB220780D0402206D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -950,6 +932,21 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		BC7D64F85F6452EF446416EF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-openLibreWatch Extension/Pods-openLibreWatch Extension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		D1C5DDEF095EDA2FE1FE1E0F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -958,7 +955,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-openLibreReader/Pods-openLibreReader-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
-				"${BUILT_PRODUCTS_DIR}/MMWormhole/MMWormhole.framework",
+				"${BUILT_PRODUCTS_DIR}/MMWormhole-iOS/MMWormhole.framework",
 				"${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework",
 				"${BUILT_PRODUCTS_DIR}/StarscreamSocketIO/StarscreamSocketIO.framework",
 			);
@@ -1046,11 +1043,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		6C7EE84F1F9B704800D4A288 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 6C7EE8421F9B704700D4A288 /* openLibreReaderWidget */;
-			targetProxy = 6C7EE84E1F9B704800D4A288 /* PBXContainerItemProxy */;
-		};
 		967D197D1FE5484A0088DCF5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 967D19791FE5484A0088DCF5 /* openLibreWatch Extension */;
@@ -1230,7 +1222,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 46557CDE10947FE710BCEEB5 /* Pods-openLibreReader.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = openLibreReader/openLibreReader.entitlements;
@@ -1252,7 +1243,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5014BCFD480F87CE7EB4C497 /* Pods-openLibreReader.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = openLibreReader/openLibreReader.entitlements;
@@ -1368,6 +1358,7 @@
 		};
 		967D19901FE5484B0088DCF5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 341E9EF1F41FE67628D445CE /* Pods-openLibreWatch Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -1394,6 +1385,7 @@
 		};
 		967D19911FE5484B0088DCF5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 582B7C6AE99DE414FD7FFAF0 /* Pods-openLibreWatch Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
