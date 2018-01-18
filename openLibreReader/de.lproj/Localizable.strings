@@ -252,7 +252,7 @@
 "Snooze for 2h" = "2 Stunden schlummern";
 
 /* notification.30 */
-"Snooze for 30 minutes" = "30 Minuten schlimmern";
+"Snooze for 30 minutes" = "30 Minuten schlummern";
 
 /* blueReader: Description */
 "The blueReader is used to fetch values from the libre Tag.\nThe interval of fetches can be configured in 1 minute intervals." = "Der blueReader wird für die Datenübertragung verwendet.\nDas Interval der Auslesung kann in minütlichen Schritten festgelegt werden.";
