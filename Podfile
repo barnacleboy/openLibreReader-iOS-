@@ -12,11 +12,11 @@ target 'openLibreReader' do
 end
 
 target 'openLibreReaderWidget' do
-    platform :ios, '10.0'
+	platform :ios, '10.0'
     shared_pods
     pod 'Charts'
 end
-
+    
 target 'openLibreWatch' do
     platform :watchos, '2.0'
     shared_pods

@@ -20,7 +20,6 @@
 		13138040C1441CFA3E307F16C6F91E0B /* HorizontalBarChartRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04720D670853FC92439C9E22BE34E85 /* HorizontalBarChartRenderer.swift */; };
 		15B4BF660AAF4828C029C326D0C7C417 /* MMWormholeSessionContextTransiting.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E5202976F0B81B76FB178DE79CEAD98 /* MMWormholeSessionContextTransiting.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1883F9795FA25CE484B4360CD3B74A77 /* MMWormhole.h in Headers */ = {isa = PBXBuildFile; fileRef = EA9490B7CDA25C085BF90F8E8C4DF142 /* MMWormhole.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1923EA055858F2CDFB26E940C6A5F083 /* Pods-openLibreWatch-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B3998FA52895089D36440284FA8323 /* Pods-openLibreWatch-dummy.m */; };
 		1B113CB9C36746050ADC93F2D5AA40B2 /* BarLineScatterCandleBubbleChartDataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FBCF0EEF7C2371F36DB447FE9F5255 /* BarLineScatterCandleBubbleChartDataSet.swift */; };
 		1D0A178DE97266F686392A5A96C7A0D3 /* MMWormhole-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4D67DEAA016D964323510C8165F65B /* MMWormhole-iOS-dummy.m */; };
 		20F5A490EF7E4CCDB94EFB87572B8178 /* ChartUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C45581186FAF0E33172EBE053C2ABC /* ChartUtils.swift */; };
@@ -60,7 +59,6 @@
 		4104C020118695F84040341183EB429B /* SocketTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833C2822D01B9D56067FCD64101B855B /* SocketTypes.swift */; };
 		416214FA92743FF11B78120FC4734B28 /* CrossShapeRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF7E107B5BC8EC555880C6785D8F98A /* CrossShapeRenderer.swift */; };
 		43D39889A2A4D9B161B8E8B36D10ADFC /* XShapeRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24923007CF03E14190F2E7F16D569865 /* XShapeRenderer.swift */; };
-		43F17945346E1ECE1BB31571A90BFA30 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30913FDEFDD6A8100A8F7829EA1A50CC /* Foundation.framework */; };
 		4405A6A5344DDD391720FDD1C5C9BD2A /* XAxisRendererHorizontalBarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7135E05E29ECA5AB5E0653C4EC0D3BD /* XAxisRendererHorizontalBarChart.swift */; };
 		45E1D7A51B9B03431DEE490674BFC0A9 /* MarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95920AC2C9CB6FBA74A467C6190F5C5 /* MarkerView.swift */; };
 		47222A02291A083098151B8FF7A5F615 /* SocketIOClientOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E40064B967BB5B661A01095703AD42 /* SocketIOClientOption.swift */; };
@@ -157,6 +155,7 @@
 		ADD0A7D4873694805EAD32848441AFAD /* ChartDataEntryBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5A9B671B8BDB26C3D6E85839BF5AF4 /* ChartDataEntryBase.swift */; };
 		B358AE50F9F17A839421AFD0C862BFAB /* SocketEnginePollable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F79F90BE9A47215132FCD83BDFD8C6 /* SocketEnginePollable.swift */; };
 		B5C06A9E2E9333E2CE5ADCFCFBE195E9 /* BarLineScatterCandleBubbleRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185DD8FE1BE4B9C146FD9E571677C7EC /* BarLineScatterCandleBubbleRenderer.swift */; };
+		B5E7DCE912D35ACBB720E846ECDBA980 /* Pods-openLibreWatch-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B3998FA52895089D36440284FA8323 /* Pods-openLibreWatch-dummy.m */; };
 		B6CB9B7C7FC8C6B8051109ED960858D2 /* MMWormhole.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B14A3E71A62049BF88B994BB24A5703 /* MMWormhole.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		B7251BCC063F1B5D357B31DDA9D3911F /* PieRadarChartViewBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BC3DB7505D89338D1A7B490CC20DD0 /* PieRadarChartViewBase.swift */; };
 		B809C1144BC21A67A09AB87A55A662CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8913FA0ED158545F00D1FAD6FA9F70F2 /* Foundation.framework */; };
@@ -165,6 +164,7 @@
 		BCF592811930A7B58CA1D98F06899A7B /* MMWormholeTransiting.h in Headers */ = {isa = PBXBuildFile; fileRef = 70BE7F6A0623AF5B236CA7E3EFCF3FDC /* MMWormholeTransiting.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BD7B00B2F65ECB9F95EF3CAA327B4B58 /* ChevronUpShapeRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683291655B11AEA11C78BECE1C9A6289 /* ChevronUpShapeRenderer.swift */; };
 		BF711F9FCDDC898433FB04664594E39F /* AnimatedMoveViewJob.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA560283E39B757618511FB2E61FC9BE /* AnimatedMoveViewJob.swift */; };
+		BFE41910A30650550CE28F3E8E11EC10 /* Pods-openLibreWatch-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EE6FE6D00E573FDF03D848857518C1A /* Pods-openLibreWatch-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C0247CB271C5BAF50A253C2C76806369 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30913FDEFDD6A8100A8F7829EA1A50CC /* Foundation.framework */; };
 		C083CE41C34FC213A28DFB14A02D2055 /* MMWormholeFileTransiting.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A29C4ABDC5FC2B6AB1E305AA553F45 /* MMWormholeFileTransiting.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		C136A4D878A7F03220827161FFD0436F /* DefaultValueFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D926BB751E1BABAD6ED608448E4999 /* DefaultValueFormatter.swift */; };
@@ -185,6 +185,7 @@
 		CC609830514DC5824A4FAE440E9DBB0D /* MMWormhole.h in Headers */ = {isa = PBXBuildFile; fileRef = EA9490B7CDA25C085BF90F8E8C4DF142 /* MMWormhole.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE8D59281ED15FC18FE6CF0594B3533D /* Range.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7950D9BFDBB008997ED7AD2DBD2445DC /* Range.swift */; };
 		CED5C76C7FB82CEB668480462F72395E /* MMWormholeCoordinatedFileTransiting.h in Headers */ = {isa = PBXBuildFile; fileRef = B8C9E99DBB3875D74B4734D6235B5293 /* MMWormholeCoordinatedFileTransiting.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D09B153ECC3286407310D905E936EFDE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30913FDEFDD6A8100A8F7829EA1A50CC /* Foundation.framework */; };
 		D2A9755AE5466E3BB43168A2C4E91BE7 /* SocketClientManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30E8F67F350F47D3A00262334AF9B4D /* SocketClientManager.swift */; };
 		D2BDAB02A9525421303C75FF9A2BD5DA /* LineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCD6C7D8EB2479F364899F3BA8A605A /* LineChartView.swift */; };
 		D35653116BC9D9386ABBF195A3092996 /* LineChartDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F2BBB6BA603C280A8562ECE580F787 /* LineChartDataProvider.swift */; };
@@ -208,7 +209,6 @@
 		E5B1F1D3579641AA5FF8C031950F56F7 /* BubbleChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33467F31C6A606C242616BE33595E28 /* BubbleChartView.swift */; };
 		E6FC09D485B3A310B30A04CDA03AA9CB /* IPieChartDataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43810A976D0DDC5F9056D0DD8A41C933 /* IPieChartDataSet.swift */; };
 		E79525D2BB5EFBA1170DDF31EFE69E1B /* BubbleChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB95E28A2934F457DF9A408ED94DB1F /* BubbleChartData.swift */; };
-		E7DD90CDE729EF387128C75631F8AACB /* Pods-openLibreWatch-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EE6FE6D00E573FDF03D848857518C1A /* Pods-openLibreWatch-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E915CC05DA3776C6509E72C3BEE18710 /* MMWormholeSessionMessageTransiting.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B7C3B85879D4482BA2D9D68215D745E /* MMWormholeSessionMessageTransiting.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		EAFE66969B8288438DB654702FE920CF /* LineRadarChartDataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686C0D5B1B8B377410E8D88AC02F5604 /* LineRadarChartDataSet.swift */; };
 		EC476D9BBDCE3D475AFC95C75540C328 /* MMWormholeFileTransiting.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A29C4ABDC5FC2B6AB1E305AA553F45 /* MMWormholeFileTransiting.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
@@ -230,13 +230,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2A4AECA1BC9268BC6790457C476DFFD3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1D416D5E8AAA52C62EECDEEAFED16087;
-			remoteInfo = Charts;
-		};
 		30B4B517E5E5C86178E6E10C9F19704F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
@@ -250,13 +243,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 61C5789A74772D18C9253386A4ABB289;
 			remoteInfo = "MMWormhole-iOS";
-		};
-		3DB044E15FC9AC3A592C67E58AA1E177 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 44E9AC41C6597D50D7F668D0301EEAA7;
-			remoteInfo = "MMWormhole-watchOS";
 		};
 		3F4E517FC5E779036AC1F83C8B2B30C4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -279,6 +265,13 @@
 			remoteGlobalIDString = 1D39F3D369C5664C66B339D05DE61E17;
 			remoteInfo = "Socket.IO-Client-Swift";
 		};
+		731952DE62D8E0B5C5B9D57EEF647A8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44E9AC41C6597D50D7F668D0301EEAA7;
+			remoteInfo = "MMWormhole-watchOS";
+		};
 		74BFC1F719E386C3D8284CD47F5217B8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
@@ -299,13 +292,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 969CC6B0B716C1D4458095119A839C36;
 			remoteInfo = StarscreamSocketIO;
-		};
-		D33800070799ECE70890E81A91D5CA06 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 61C5789A74772D18C9253386A4ABB289;
-			remoteInfo = "MMWormhole-iOS";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -630,11 +616,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F3E855A2631A256E0DD22AA73A6E7D7D /* Frameworks */ = {
+		D29AD3A5A721049884242EF864A92E48 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43F17945346E1ECE1BB31571A90BFA30 /* Foundation.framework in Frameworks */,
+				D09B153ECC3286407310D905E936EFDE /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1130,14 +1116,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9BD9D850CCBA4309CB8599D121EC56BF /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E7DD90CDE729EF387128C75631F8AACB /* Pods-openLibreWatch-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D0DD692398065193DB0584F75CFBA1B2 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -1175,6 +1153,14 @@
 				CADE29AF8B4AF6E472D159F70D071BFC /* MMWormholeSessionFileTransiting.h in Headers */,
 				C39D45EF4E1928FBD94A8DB42E96A977 /* MMWormholeSessionMessageTransiting.h in Headers */,
 				BCF592811930A7B58CA1D98F06899A7B /* MMWormholeTransiting.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F78F1E929108A93BF383B2D472AA85AD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFE41910A30650550CE28F3E8E11EC10 /* Pods-openLibreWatch-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1308,6 +1294,24 @@
 			productReference = E19AB3520698F5B387F451F81C7E3277 /* Pods_openLibreWatch_Extension.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		9171877188BFFA77113784C49B012E57 /* Pods-openLibreWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 899AC5803D2A87DDD2108E41970D8650 /* Build configuration list for PBXNativeTarget "Pods-openLibreWatch" */;
+			buildPhases = (
+				1F23927F9DA3064A0AC87BCB69880A9F /* Sources */,
+				D29AD3A5A721049884242EF864A92E48 /* Frameworks */,
+				F78F1E929108A93BF383B2D472AA85AD /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF826E589D155CA25DAB8FCF0349C363 /* PBXTargetDependency */,
+			);
+			name = "Pods-openLibreWatch";
+			productName = "Pods-openLibreWatch";
+			productReference = 32FEFCBDF2076DA46D45DECBD4499D43 /* Pods_openLibreWatch.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		969CC6B0B716C1D4458095119A839C36 /* StarscreamSocketIO */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E045769B5ED4E9DCF87A655D40A9B652 /* Build configuration list for PBXNativeTarget "StarscreamSocketIO" */;
@@ -1323,26 +1327,6 @@
 			name = StarscreamSocketIO;
 			productName = StarscreamSocketIO;
 			productReference = 2523646445EE8C43753C0D7ED9F89A2C /* StarscreamSocketIO.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		CD7F203F1CE5FDBAF68E6949CE260A92 /* Pods-openLibreWatch */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6563CBE1178E2ACD382664289B6636B3 /* Build configuration list for PBXNativeTarget "Pods-openLibreWatch" */;
-			buildPhases = (
-				C5ADA67EF866C65F2914672408FF924C /* Sources */,
-				F3E855A2631A256E0DD22AA73A6E7D7D /* Frameworks */,
-				9BD9D850CCBA4309CB8599D121EC56BF /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				BD41D4A412293D8F7CC170A9E487A017 /* PBXTargetDependency */,
-				55947092FA183F3F9C1DE9C4F710F564 /* PBXTargetDependency */,
-				04B1DB2179CDE6D7607D93F7FDC8274D /* PBXTargetDependency */,
-			);
-			name = "Pods-openLibreWatch";
-			productName = "Pods-openLibreWatch";
-			productReference = 32FEFCBDF2076DA46D45DECBD4499D43 /* Pods_openLibreWatch.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -1371,7 +1355,7 @@
 				44E9AC41C6597D50D7F668D0301EEAA7 /* MMWormhole-watchOS */,
 				46FB57742EFD535DC706360A6186374C /* Pods-openLibreReader */,
 				6E0482AF68B66E12F2533CB6BA20878A /* Pods-openLibreReaderWidget */,
-				CD7F203F1CE5FDBAF68E6949CE260A92 /* Pods-openLibreWatch */,
+				9171877188BFFA77113784C49B012E57 /* Pods-openLibreWatch */,
 				827FBB4C066CFFD164D074D96EDB5E5A /* Pods-openLibreWatch Extension */,
 				1D39F3D369C5664C66B339D05DE61E17 /* Socket.IO-Client-Swift */,
 				969CC6B0B716C1D4458095119A839C36 /* StarscreamSocketIO */,
@@ -1380,6 +1364,14 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1F23927F9DA3064A0AC87BCB69880A9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5E7DCE912D35ACBB720E846ECDBA980 /* Pods-openLibreWatch-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3BA2F0B85F074B6E42A431440168C78E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1588,14 +1580,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C5ADA67EF866C65F2914672408FF924C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1923EA055858F2CDFB26E940C6A5F083 /* Pods-openLibreWatch-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		CEBDD8A6CB965491B6B13E9D578255D8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1629,12 +1613,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		04B1DB2179CDE6D7607D93F7FDC8274D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "MMWormhole-watchOS";
-			target = 44E9AC41C6597D50D7F668D0301EEAA7 /* MMWormhole-watchOS */;
-			targetProxy = 3DB044E15FC9AC3A592C67E58AA1E177 /* PBXContainerItemProxy */;
-		};
 		0A8A5A6FB1A9FD2F9D6323D946525E04 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "MMWormhole-iOS";
@@ -1647,12 +1625,6 @@
 			target = 1D416D5E8AAA52C62EECDEEAFED16087 /* Charts */;
 			targetProxy = 3F4E517FC5E779036AC1F83C8B2B30C4 /* PBXContainerItemProxy */;
 		};
-		55947092FA183F3F9C1DE9C4F710F564 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "MMWormhole-iOS";
-			target = 61C5789A74772D18C9253386A4ABB289 /* MMWormhole-iOS */;
-			targetProxy = D33800070799ECE70890E81A91D5CA06 /* PBXContainerItemProxy */;
-		};
 		B53BD13F77D504C57F891D8B05B55873 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Socket.IO-Client-Swift";
@@ -1664,12 +1636,6 @@
 			name = Charts;
 			target = 1D416D5E8AAA52C62EECDEEAFED16087 /* Charts */;
 			targetProxy = 30B4B517E5E5C86178E6E10C9F19704F /* PBXContainerItemProxy */;
-		};
-		BD41D4A412293D8F7CC170A9E487A017 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Charts;
-			target = 1D416D5E8AAA52C62EECDEEAFED16087 /* Charts */;
-			targetProxy = 2A4AECA1BC9268BC6790457C476DFFD3 /* PBXContainerItemProxy */;
 		};
 		BE2D577673AA5FCBA70FBB4C2CF317F9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1694,6 +1660,12 @@
 			name = "MMWormhole-watchOS";
 			target = 44E9AC41C6597D50D7F668D0301EEAA7 /* MMWormhole-watchOS */;
 			targetProxy = 41D71232BF972F278A1CD12D88388D25 /* PBXContainerItemProxy */;
+		};
+		CF826E589D155CA25DAB8FCF0349C363 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "MMWormhole-watchOS";
+			target = 44E9AC41C6597D50D7F668D0301EEAA7 /* MMWormhole-watchOS */;
+			targetProxy = 731952DE62D8E0B5C5B9D57EEF647A8C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1726,6 +1698,39 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		170E3CBC4125B59E960B4C81662E131C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C01A999EB5A538D07454E200E8BB7661 /* Pods-openLibreWatch.debug.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-openLibreWatch/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-openLibreWatch/Pods-openLibreWatch.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_openLibreWatch;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
@@ -1992,41 +1997,6 @@
 			};
 			name = Release;
 		};
-		9B1A588610B3E15C2B35B071B3A3265F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C01A999EB5A538D07454E200E8BB7661 /* Pods-openLibreWatch.debug.xcconfig */;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-openLibreWatch/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-openLibreWatch/Pods-openLibreWatch.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_openLibreWatch;
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = 4;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Debug;
-		};
 		9B97A00D8AB355B27C7268594272DF3C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A755A243DD83AC3E01BB0D28E239A5C7 /* MMWormhole-iOS.xcconfig */;
@@ -2057,41 +2027,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		A80E441BCD0E41E9ABE2A403A74C730A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 94CB846B7CAED7835A2C5890636FAD70 /* Pods-openLibreWatch.release.xcconfig */;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-openLibreWatch/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-openLibreWatch/Pods-openLibreWatch.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_openLibreWatch;
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				TARGETED_DEVICE_FAMILY = 4;
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Release;
 		};
 		B05DB40E3CB1EFFF41B10813A70105B3 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -2212,6 +2147,40 @@
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D33ACA905E5FA3A5D126E16C87C5355C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94CB846B7CAED7835A2C5890636FAD70 /* Pods-openLibreWatch.release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-openLibreWatch/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-openLibreWatch/Pods-openLibreWatch.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_openLibreWatch;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
@@ -2446,20 +2415,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6563CBE1178E2ACD382664289B6636B3 /* Build configuration list for PBXNativeTarget "Pods-openLibreWatch" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9B1A588610B3E15C2B35B071B3A3265F /* Debug */,
-				A80E441BCD0E41E9ABE2A403A74C730A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		65B810D871D86A7F806519CFEDE17CF1 /* Build configuration list for PBXNativeTarget "Pods-openLibreReaderWidget" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EEA249DE28162D88C97B7509C7C2D656 /* Debug */,
 				603F33C6EC955688076B30FD37234A2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		899AC5803D2A87DDD2108E41970D8650 /* Build configuration list for PBXNativeTarget "Pods-openLibreWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				170E3CBC4125B59E960B4C81662E131C /* Debug */,
+				D33ACA905E5FA3A5D126E16C87C5355C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
