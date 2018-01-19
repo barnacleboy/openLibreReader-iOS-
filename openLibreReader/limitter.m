@@ -267,6 +267,10 @@
     return NO;
 }
 
+-(NSArray*) getRequestedDeviceUUIDs {
+    return [NSArray arrayWithObjects:[CBUUID UUIDWithString:BLUETOOTH_SERVICE_HM], nil];
+}
+
 +(BOOL) compatibleName:(CBPeripheral*) peripheral {
     if([[peripheral.name lowercaseString] rangeOfString:@"limitter"].length!=0)
         return YES;

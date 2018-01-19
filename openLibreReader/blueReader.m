@@ -281,6 +281,10 @@
     return NO;
 }
 
+-(NSArray*) getRequestedDeviceUUIDs {
+    return [NSArray arrayWithObjects:[CBUUID UUIDWithString:BLUETOOTH_SERVICE_NORDIC_UART], nil];
+}
+
 +(BOOL) compatibleName:(CBPeripheral*) peripheral {
     if([[peripheral.name lowercaseString] rangeOfString:@"bluereader"].length!=0)
         return YES;

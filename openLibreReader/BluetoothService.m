@@ -7,6 +7,7 @@
 
 #import "BluetoothService.h"
 #import "Storage.h"
+#import "Configuration.h"
 
 @interface BluetoothService () <CBCentralManagerDelegate,CBPeripheralDelegate>
     @property (retain) CBCentralManager* manager;
@@ -137,7 +138,7 @@
 - (void) startScanning {
     [[Storage instance] log:@"start scanning" from:@"BluetoothService"];
     _foundDevices = [NSMutableArray array];
-    [_manager scanForPeripheralsWithServices:nil options:[NSDictionary dictionaryWithObject:[NSNumber numberWithBool:NO] forKey:CBCentralManagerScanOptionAllowDuplicatesKey]];
+    [_manager scanForPeripheralsWithServices:[[Configuration instance] getRequestedDeviceUUIDs] options:[NSDictionary dictionaryWithObject:[NSNumber numberWithBool:NO] forKey:CBCentralManagerScanOptionAllowDuplicatesKey]];
 }
 
 -(void) stopScanning {
