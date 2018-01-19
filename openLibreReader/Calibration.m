@@ -61,10 +61,11 @@
 }
 
 +(UIViewController*) configurationViewController {
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+   /* UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
 
     UIViewController* vc = [storyboard instantiateViewControllerWithIdentifier:@"CalibrationViewController"];
     return vc;
+    */ return nil;
 }
 
 -(void)unregister {

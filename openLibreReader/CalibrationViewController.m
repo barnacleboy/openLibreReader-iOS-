@@ -41,9 +41,9 @@
     // todo: should we have an own calibrationData storage?
     NSMutableDictionary* data = [[Storage instance] deviceData];
 
-    if(self.navigationItem.leftBarButtonItem == nil) {
+/*    if(self.navigationItem.leftBarButtonItem == nil) {
         self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(use:)];
-    }
+    }*/
 }
 
 -(void)viewDidDisappear:(BOOL)animated {
