@@ -266,6 +266,9 @@
 /* limitter: Description */
 "The LimiTTer is used to fetch values from the libre Tag." = "LimiTTer diy transmitter.";
 
+/* limitter: Description */
+"The LimiTTer or SweetReader is used to fetch values from the libre Tag." = "The LimiTTer or SweetReader is used to fetch values from the libre Tag.";
+
 /* alarmalert.title */
 "until re-enable" = "until re-enable";
 

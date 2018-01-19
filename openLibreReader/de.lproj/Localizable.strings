@@ -266,6 +266,9 @@
 /* limitter: Description */
 "The LimiTTer is used to fetch values from the libre Tag." = "LimiTTer diy Transmitter";
 
+/* limitter: Description */
+"The LimiTTer or SweetReader is used to fetch values from the libre Tag." = "Der SweetReader oder LimiTTer selbstbau Transmitter.\nWährend die App im Hintergrund ist, können Daten verpasst werden!";
+
 /* alarmalert.title */
 "until re-enable" = "Bis zum Einschalten";
 

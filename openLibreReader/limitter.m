@@ -230,11 +230,11 @@
 #pragma mark configuration
 
 +(NSString*) configurationName {
-    return @"LimiTTer";
+    return @"LimiTTer / SweetReader";
 }
 
 +(NSString*) configurationDescription {
-    return NSLocalizedString(@"The LimiTTer is used to fetch values from the libre Tag.",@"limitter: Description");
+    return NSLocalizedString(@"The LimiTTer or SweetReader is used to fetch values from the libre Tag.",@"limitter: Description");
 }
 
 +(UIViewController*) configurationViewController {
@@ -273,6 +273,8 @@
 
 +(BOOL) compatibleName:(CBPeripheral*) peripheral {
     if([[peripheral.name lowercaseString] rangeOfString:@"limitter"].length!=0)
+        return YES;
+    if([[peripheral.name lowercaseString] rangeOfString:@"sweetreader"].length!=0)
         return YES;
     return NO;
 }
