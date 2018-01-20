@@ -72,7 +72,7 @@
 -(void) discover:(NSNotification*)notofication {
     [[Storage instance] log:@"start discover" from:@"BluetoothService"];
     CBPeripheral* p = [notofication object];
-    [p discoverServices:nil];
+    [p discoverServices:[[Configuration instance].device getRequestedDeviceUUIDs]];
 }
 
 -(void) connect:(NSNotification*)notofication {
