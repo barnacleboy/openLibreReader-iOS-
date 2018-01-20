@@ -6,7 +6,7 @@ openLibreReader for iOS is a project to connect the various Libre Transmitters t
 - supported devices:
     - blueReader
     - nightscout client
-    - LimiTTer
+    - LimiTTer / SweetReader
 - configurable Alarms
 - configurable Notifications
 - supports mg/dl and mmol units
