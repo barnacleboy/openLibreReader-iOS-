@@ -111,7 +111,7 @@
 }
 
 -(void) disconnected:(NSNotification*) notification {
-    if(![self device] || [[self device] isEqual:[notification object]]) {
+    if(![self device] || [[self device].identifier isEqual:((CBPeripheral*)[notification object]).identifier]) {
         DeviceStatus* ds = [[DeviceStatus alloc] init];
         ds.status = DEVICE_DISCONNECTED;
         ds.statusText = [NSString stringWithFormat:NSLocalizedString(@"Disconnected from %@, waiting for next",@"limitter: disconnect from device"),[[notification object] name]];
