@@ -11,6 +11,7 @@
 
 #import "Calibration.h"
 #import "TestCalibration.h"
+#import "SimpleLinearRegressionCalibration.h"
 
 #import "blueReader.h"
 #import "nightscout.h"
@@ -24,11 +25,15 @@
 #import "bgValue.h"
 #import "Storage.h"
 #import "HomeViewController.h"
+#import <WatchConnectivity/WatchConnectivity.h>
+#import "openLibreReader-Swift.h"
 
 @interface AppDelegate ()
 @property (strong) BluetoothService* bluetoothService;
 @property (strong) Alarms* alarms;
 @property (nonatomic,strong) MMWormhole* wormhole;
+@property (nonatomic,strong) ConnectivityHandler* connectivityHandler;
+
 @property (nonatomic, strong)   NSMutableDictionary* wormholeData;
 @end
 
@@ -43,6 +48,7 @@
     _alarms = [[Alarms alloc] init];
     registerCalibration([Calibration class]);
     registerCalibration([TestCalibration class]);
+    registerCalibration([SimpleLinearRegressionCalibration class]);
 
     registerDevice([blueReader class]);
     registerDevice([nightscout class]);
@@ -56,6 +62,10 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(recieved:) name:kCalibrationBGValue object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(deviceStatus:) name:kDeviceStatusNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(recievedBattery:) name:kDeviceBatteryValueNotification object:nil];
+
+    if ([WCSession isSupported]) {
+        _connectivityHandler = [ConnectivityHandler new];
+    }
 
     return YES;
 }
@@ -81,11 +91,15 @@
 }
 -(void) makeWormholeData {
     NSData* archive = [NSKeyedArchiver archivedDataWithRootObject:_wormholeData];
-    [_wormholeData setObject:[[Storage instance] getSelectedDisplayUnit] forKey:@"unit"];
-    [_wormholeData setObject:[NSNumber numberWithInt:[[Configuration instance] lowerBGLimit]] forKey:@"lowerBGLimit"];
-    [_wormholeData setObject:[NSNumber numberWithInt:[[Configuration instance] upperBGLimit]] forKey:@"upperBGLimit"];
-    [_wormholeData setObject:[NSNumber numberWithInt:[[Configuration instance] lowBGLimit]] forKey:@"lowBGLimit"];
-    [_wormholeData setObject:[NSNumber numberWithInt:[[Configuration instance] highBGLimit]] forKey:@"highBGLimit"];
+
+    if([[Storage instance] getSelectedDisplayUnit]) {
+        [_wormholeData setObject:[[Storage instance] getSelectedDisplayUnit] forKey:@"unit"];
+    }
+    Configuration* c = [Configuration instance];
+    [_wormholeData setObject:[NSNumber numberWithInt:[c valueInDisplayUnit:[[Configuration instance] lowerBGLimit]]] forKey:@"lowerBGLimit"];
+    [_wormholeData setObject:[NSNumber numberWithInt:[c valueInDisplayUnit:[[Configuration instance] upperBGLimit]]] forKey:@"upperBGLimit"];
+    [_wormholeData setObject:[NSNumber numberWithInt:[c valueInDisplayUnit:[[Configuration instance] lowBGLimit]]] forKey:@"lowBGLimit"];
+    [_wormholeData setObject:[NSNumber numberWithInt:[c valueInDisplayUnit:[[Configuration instance] highBGLimit]]] forKey:@"highBGLimit"];
 
     [self.wormhole passMessageObject:archive
                           identifier:@"currentData"];
@@ -133,7 +147,7 @@
 
     NSMutableArray* valueArray = [NSMutableArray new];
     for(bgValue* value in [[Storage instance] bgValuesFrom:[[NSDate date]timeIntervalSince1970]-(8*60*60) to:[[NSDate date]timeIntervalSince1970]]) {
-        [valueArray addObject:@{@"value":[NSNumber numberWithDouble:value.value],
+        [valueArray addObject:@{@"value":[NSNumber numberWithDouble:[c valueInDisplayUnit:value.value]],
                                 @"timestamp":[NSNumber numberWithDouble:value.timestamp]
                                 }];
     }
@@ -143,7 +157,9 @@
         [self.wormhole passMessageObject:archive
                               identifier:@"currentData"];
     }
+    [self.connectivityHandler sendDictionaryWithDict:_wormholeData ];
 }
+
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
@@ -165,7 +181,12 @@
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
     [[NSNotificationCenter defaultCenter] postNotificationName:kAppDidActivate object:nil];
-
+    if([[Configuration instance] device]) {
+        if([[[Configuration instance] device] needsConnection]) {
+            NSLog(@"trying to reload device");
+            [[[Configuration instance] device] reload];
+        }
+    }
 }
 
 

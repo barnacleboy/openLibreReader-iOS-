@@ -229,7 +229,7 @@ static Storage* __instance;
         [_dbLock lock];
         [self openValueDB];
         sqlite3_stmt *statement = nil;
-        if (sqlite3_prepare_v2(_db, "select value, timestamp, raw_source from bg_values where timestamp > ? and timestamp < ?", -1, &statement, NULL) == SQLITE_OK) {
+        if (sqlite3_prepare_v2(_db, "select value, timestamp, raw_source from bg_values where timestamp > ? and timestamp <= ?", -1, &statement, NULL) == SQLITE_OK) {
             sqlite3_bind_int64(statement, 1, (unsigned long)from);
             sqlite3_bind_int64(statement, 2, (unsigned long)to);
         } else{
@@ -320,7 +320,7 @@ static Storage* __instance;
         [_dbLock lock];
         [self openValueDB];
         sqlite3_stmt *statement = nil;
-        if (sqlite3_prepare_v2(_db, "select raw_source,raw_data,value from bg_values where timestamp < ? order by timestamp desc limit 1", -1, &statement, NULL) == SQLITE_OK) {
+        if (sqlite3_prepare_v2(_db, "select raw_source,raw_data from bg_values where timestamp < ? order by timestamp desc limit 1", -1, &statement, NULL) == SQLITE_OK) {
             sqlite3_bind_int64(statement, 1, (unsigned long)before);
         } else{
             [self log:@"unable to get last bg before" from:@"Storage"];

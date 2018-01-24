@@ -1,9 +1,28 @@
 use_frameworks!
 
-target 'openLibreReader' do
-    pod 'Socket.IO-Client-Swift', '~> 12.0.0' # Or latest version
+def shared_pods
     pod 'MMWormhole', '~> 2.0.0'
-    target 'openLibreReaderWidget' do
-        inherit! :search_paths
-    end
+end
+
+target 'openLibreReader' do
+    platform :ios, '10.0'
+    shared_pods
+    pod 'Socket.IO-Client-Swift', '~> 12.0.0' # Or latest version
+    pod 'Charts'
+end
+
+target 'openLibreReaderWidget' do
+	platform :ios, '10.0'
+    shared_pods
+    pod 'Charts'
+end
+    
+target 'openLibreWatch' do
+    platform :watchos, '2.0'
+    shared_pods
+end
+
+target 'openLibreWatch Extension' do
+    platform :watchos, '2.0'
+    shared_pods
 end
